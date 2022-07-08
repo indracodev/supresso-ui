@@ -19,8 +19,8 @@
 			<li class="nav-item"><a href="#" class="nav-link">CART [8]</a></li>
 		</ul>
 
-		<button class="navbar-toggler d-lg-none border-0" data-toggle="collapse" data-target="#navcol1">
-			<span class="navbar-toggler-icon"></span>
+		<button class="navbar-toggler d-lg-none border-0 ml-2 collapsed" data-toggle="collapse" data-target="#navcol1">
+			<span class="navbar-toggler-icon"></span><i class="bi bi-x-lg"></i>
 		</button>
 	</div>
 </nav>
@@ -30,12 +30,12 @@
 		<div class="container d-block py-lg-5">
 			<div class="row align-items-lg-end">
 				<div class="col-12 col-lg-auto menu d-lg-none">
-					<form class="d-flex border-bottom border-secondary">
+					<form class="d-flex border-bottom border-secondary align-items-center">
 						<button class="btn"><i class="bi bi-search"></i></button>
 						<input type="search" name="" placeholder="Search" class="form-control border-0 px-0">
 					</form>
 					<ul class="navbar-nav py-3">
-						<li class="nav-item"><a href="#" class="nav-link">COFFEE</a></li>
+						<li class="nav-item"><a href="#" class="nav-link" id="nav-coffee-mobile">COFFEE</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">MACHINES</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">EXPLORE</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">PARTNERSHIPS</a></li>
@@ -43,7 +43,7 @@
 					</ul>
 				</div>
 
-				<div class="col-lg-auto submenu d-lg-none">
+				<div class="col-lg-auto submenu d-lg-none" id="submenu-coffee">
 					<header class="border-bottom border-lg-0 mb-lg-4">
 						<div class="container container-lg-fluid px-lg-0">
 							<div class="d-flex align-items-center">
@@ -53,16 +53,16 @@
 						</div>
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
-						<ul class="navbar-nav py-3 py-lg-0">
-							<li class="nav-item"><a href="#" class="nav-link">BEANS</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">GROUND</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">DRIP</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">CAPSULES</a></li>
+						<ul class="navbar-nav py-3 py-lg-0 w-100">
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-beans">BEANS</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-ground">GROUND</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-drip">DRIP</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-capsules">CAPSULES</a></li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="col-lg-auto submenu">
+				<div class="col-lg-auto submenu" id="submenu-beans">
 					<header class="border-bottom border-lg-0 mb-lg-4">
 						<div class="container container-lg-fluid px-lg-0">
 							<div class="d-flex align-items-center">
@@ -72,7 +72,7 @@
 						</div>
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
-						<ul class="navbar-nav py-3 py-lg-0">
+						<ul class="navbar-nav py-3 py-lg-0 w-100">
 							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-auto submenu">
+				<div class="col-lg-auto submenu" id="submenu-ground">
 					<header class="border-bottom border-lg-0 mb-lg-4">
 						<div class="container container-lg-fluid px-lg-0">
 							<div class="d-flex align-items-center">
@@ -93,7 +93,7 @@
 						</div>
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
-						<ul class="navbar-nav py-3 py-lg-0">
+						<ul class="navbar-nav py-3 py-lg-0 w-100">
 							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-auto submenu">
+				<div class="col-lg-auto submenu" id="submenu-drip">
 					<header class="border-bottom border-lg-0 mb-lg-4">
 						<div class="container container-lg-fluid px-lg-0">
 							<div class="d-flex align-items-center">
@@ -114,7 +114,7 @@
 						</div>
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
-						<ul class="navbar-nav py-3 py-lg-0">
+						<ul class="navbar-nav py-3 py-lg-0 w-100">
 							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-auto submenu">
+				<div class="col-lg-auto submenu" id="submenu-capsules">
 					<header class="border-bottom border-lg-0 mb-lg-4">
 						<div class="container container-lg-fluid px-lg-0">
 							<div class="d-flex align-items-center">
@@ -135,7 +135,7 @@
 						</div>
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
-						<ul class="navbar-nav py-3 py-lg-0">
+						<ul class="navbar-nav py-3 py-lg-0 w-100">
 							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
@@ -155,80 +155,3 @@
 		</div>
 	</nav>
 </div>
-
-<style type="text/css">
-	.navbar.navbar-light {
-		background-color: white;
-	}
-
-	#navtop .navbar-nav .nav-link {
-		padding-left: .5rem;
-		padding-right: .5rem;
-		position: relative;
-	}
-
-	#navtop .navbar-corner,
-	#navtop .navbar-corner .nav-item {
-		position: relative;
-	}
-
-	#navtop .navbar-corner::before,
-	#navtop .navbar-corner .nav-item::before {
-		content: '|';
-		position: absolute;
-		top: 50%;
-	}
-
-	#navtop .navbar-corner::before {
-		right: 0;
-		transform: translate(50%, -50%);
-	}
-
-	#navtop .navbar-corner .nav-item::before {
-		left: 0;
-		transform: translate(-50%, -50%);
-	}
-
-	@media (max-width: 991.98px) {
-		.navbar-toggler {
-			margin-right: -.85rem;
-		}
-
-		#navcol1 .menu,
-		#navcol1 .submenu {
-			height: calc(100vh - 66px);
-		}
-
-		#navcol1 .submenu {
-			position: absolute;
-			top: 0;
-			left: 50%;
-			background-color: white;
-			padding: 0;
-		}
-
-		#navcol1 .menu form .btn,
-		#navcol1 .submenu header .btn {
-			width: 42px;
-			height: 42px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-left: -.75rem;
-		}
-	}
-
-	@media (min-width: 992px) {
-		#navcol1 .img-tumbnails {
-			max-width: 175px;
-		}
-
-		#navcol1 .col-lg-auto {
-			margin-right: 2rem;
-		}
-
-		#navcol1 .col-lg-auto:nth-last-of-type(2) {
-			margin-right: 0;
-		}
-	}
-</style>

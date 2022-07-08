@@ -1,0 +1,108 @@
+/*------------------ HOME BANNER ------------------*/
+
+#home-banner .carousel-caption {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+#home-banner .carousel-item {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#home-banner .carousel-item:nth-of-type(1) {
+	background-image: url(../img/landingSG/m_assorted.jpg);
+}
+#home-banner .carousel-item:nth-of-type(2) {
+	background-image: url(../img/landingSG/m_exotic.jpg);
+}
+#home-banner .carousel-item:nth-of-type(3) {
+	background-image: url(../img/landingSG/m_lampung.jpg);
+}
+
+@media (min-width: 992px) {
+	#home-banner .carousel-title {
+		font-size: calc(3rem + 2vw)!important;
+	}
+
+	#home-banner .carousel-item:nth-of-type(1) {
+		background-image: url(../img/landingSG/d_assorted.jpg);
+	}
+	#home-banner .carousel-item:nth-of-type(2) {
+		background-image: url(../img/landingSG/d_exotic.jpg);
+	}
+	#home-banner .carousel-item:nth-of-type(3) {
+		background-image: url(../img/landingSG/d_lampung.jpg);
+	}
+}
+
+/*------------------ TILES ------------------*/
+
+#tiles {
+	color: #ffffff;
+	overflow: hidden;
+}
+
+#tiles .baris {
+	margin: 0 -.2rem;
+}
+
+#tiles .kolom {
+	padding: 0 .2rem;
+	padding-top: .4rem;
+}
+
+#tiles .card {
+	background-color: #3a3a3a;
+	border-width: 0;
+	border-radius: 0;
+}
+
+#tiles .card-img-overlay {
+	top: initial;
+}
+
+#tiles .card-title,
+#tiles .card-text {
+	margin-bottom: initial;
+}
+
+@media (max-width: 991.98px) {	
+	#tiles .container-fluid {
+		padding: 0!important;
+	}
+}
+
+@media (min-width: 992px) {
+	#tiles .baris {
+		margin: 0 -.5rem;
+	}
+
+	#tiles .kolom {
+		padding: 0 .5rem;
+		padding-top: 1rem;
+	}
+
+	#tiles .card-img {
+		opacity: .75;
+		transition: .36s;
+	}
+
+	#tiles .card:hover .card-img {
+		opacity: 1;
+	}
+
+	#tiles .col-md-6 .card-img-overlay {
+		padding: 2rem;
+	}
+
+	#tiles .card-title {
+		font-size: 1.75rem;
+	}
+}

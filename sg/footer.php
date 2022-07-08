@@ -1,7 +1,8 @@
 <footer id="copyright">
 	<div class="border-top border-secondary">
-		<div class="container">
-			<ol class="breadcrumb">
+		<div class="container py-5">
+			<ol class="breadcrumb mb-5" id="breadcrumb1">
+				<li class="breadcrumb-item"><a href="#">HOME</a></li>
 				<li class="breadcrumb-item"><a href="#">BEANS</a></li>
 				<li class="breadcrumb-item"><a href="#">GROUND</a></li>
 				<li class="breadcrumb-item"><a href="#">DRIP</a></li>
@@ -9,9 +10,10 @@
 				<li class="breadcrumb-item"><a href="#">MEMBERSHIP</a></li>
 				<li class="breadcrumb-item"><a href="#">CONTACT</a></li>
 				<li class="breadcrumb-item"><a href="#">BROCHURE</a></li>
+				<li class="breadcrumb-item"><a href="#">NEWS & EVENTS</a></li>
 			</ol>
 
-			<div class="footer-sosmed">
+			<div id="footer-sosmed">
 				<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
 				<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
 				<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -20,18 +22,18 @@
 		</div>
 	</div>
 
-	<div class="border-top small">
-		<div class="container">
+	<div class="border-top">
+		<div class="container py-4">
 			<div class="row">
 				<div class="col-lg-auto">
-					<ol class="breadcrumb">
+					<ol class="breadcrumb mb-4 mb-lg-0" id="breadcrumb2">
 						<li class="breadcrumb-item"><a href="#">Privacy Policy</a></li>
 						<li class="breadcrumb-item"><a href="#">Terms & Conditions</a></li>
 						<li class="breadcrumb-item"><a href="#">Information on Data Protection</a></li>
 					</ol>
 				</div>
 
-				<div class="col-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span></div>
+				<div class="col-lg-auto ml-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span></div>
 			</div>
 		</div>
 	</div>
