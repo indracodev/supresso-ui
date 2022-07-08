@@ -13,6 +13,8 @@
 		<?php include 'navbar.php' ?>
 	</header>
 
+	<h1>COBA</h1>
+
 	<main class="wrapper">
 		<section>
 			<div id="home-banner" class="carousel slide" data-ride="carousel">
