@@ -172,6 +172,14 @@
 	</main> <!-- end wrapper -->
 
 	<?php include 'footer.php' ?>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#navtop').removeClass('navbar-light');
+			$('#navtop').addClass('navbar-dark');
+
+		});
+	</script>
 	<!-- <script type="text/javascript">[].forEach.call(document.querySelectorAll("*"), function(a){a.style.outline="1px solid green";});</script> -->
 </body>
 

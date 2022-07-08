@@ -84,6 +84,14 @@ $(document).ready(function() {
 
 	}
 
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+			$('.navbar.navbar-dark').addClass('invert');
+		} else {
+			$('.navbar.navbar-dark').removeClass('invert');
+		}
+	});
+
 	// ----------- all about carousel
 	$('.carousel-banner .carousel-item').height($(window).height());
 })

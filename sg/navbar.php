@@ -6,17 +6,17 @@
 		</a>
 
 		<ul class="navbar-nav d-none d-lg-flex flex-row ml-lg-auto">
-			<li class="nav-item"><a data-toggle="collapse" href="#navcol1" class="nav-link">COFFEE</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">MACHINES</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">EXPLORE</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">PARTNERSHIPS</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">CAFE</a></li>
+			<li class="nav-item"><a data-toggle="collapse" href="#navcol1" class="nav-link"><span>COFFEE</span></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><span>MACHINES</span></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><span>EXPLORE</span></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><span>PARTNERSHIPS</span></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><span>CAFE</span></a></li>
 		</ul>
 
 		<ul class="navbar-nav navbar-corner flex-row ml-auto ml-lg-4">
-			<li class="nav-item d-none d-lg-block"><a href="#" class="nav-link">SEARCH</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">PROFILE</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">CART [8]</a></li>
+			<li class="nav-item d-none d-lg-block"><a href="#" class="nav-link"><span>SEARCH</span></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><span>PROFILE</span></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><span>CART [8]</span></a></li>
 		</ul>
 
 		<button class="navbar-toggler d-lg-none border-0 ml-2 collapsed" data-toggle="collapse" data-target="#navcol1">
@@ -35,11 +35,11 @@
 						<input type="search" name="" placeholder="Search" class="form-control border-0 px-0">
 					</form>
 					<ul class="navbar-nav py-3">
-						<li class="nav-item"><a href="#" class="nav-link" id="nav-coffee-mobile">COFFEE</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">MACHINES</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">EXPLORE</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">PARTNERSHIPS</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">CAFE</a></li>
+						<li class="nav-item"><a href="#" class="nav-link" id="nav-coffee-mobile"><span>COFFEE</span></a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><span>MACHINES</span></a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><span>EXPLORE</span></a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><span>PARTNERSHIPS</span></a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><span>CAFE</span></a></li>
 					</ul>
 				</div>
 
@@ -54,10 +54,10 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-beans">BEANS</a></li>
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-ground">GROUND</a></li>
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-drip">DRIP</a></li>
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-capsules">CAPSULES</a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-beans"><span>BEANS</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-ground"><span>GROUND</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-drip"><span>DRIP</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link" id="nav-capsules"><span>CAPSULES</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,12 +73,12 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Rainforest</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Gourmet</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">World Blend</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -94,12 +94,12 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Rainforest</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Gourmet</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">World Blend</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -115,12 +115,12 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Rainforest</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Gourmet</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">World Blend</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -136,12 +136,12 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link">Single Origin</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Luwak Prestige</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Organic</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Rainforest</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Gourmet</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">World Blend</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
+							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
 						</ul>
 					</div>
 				</div>

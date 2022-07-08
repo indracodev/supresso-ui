@@ -1,6 +1,6 @@
 html, body {
 	font-family: 'Gotham Book', sans-serif;
-	background-color: #ffffff;
+	background-color: white;
 	color: #3a3a3a;
 	font-size: 14px;
 }
@@ -91,12 +91,9 @@ a, button, .btn, .navbar-toggler, input, textarea, .form-control {
 NAVBAR
 --------------------------------------------------------- */
 
-#main-header {
+#main-header,
+.navbar {
 	transition: .36s;
-}
-
-.navbar.navbar-light {
-	background-color: white;
 }
 
 #navtop .navbar-nav .nav-link {
@@ -199,6 +196,70 @@ NAVBAR
 	#navcol1 .col-lg-auto:nth-last-of-type(2) {
 		margin-right: 0;
 	}
+
+	/*animasi hover nav-link*/
+
+	.navbar-nav .nav-link span {
+		position: relative;
+	}
+
+	.navbar-nav .nav-link span::before {
+		content: '';
+		position: absolute;
+		bottom: -.5rem;
+		width: 0;
+		height: 2px;
+		transition: .36s;
+	}
+
+	.navbar-nav .nav-link:hover span::before,
+	.navbar-nav .nav-link.active span::before {
+		width: 100%;
+	}
+
+	#navtop .navbar-nav .nav-link span::before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#navcol1 .navbar-nav .nav-link span::before {
+		left: 0;
+	}
+}
+
+/*navbar dark*/
+
+.navbar.navbar-dark {
+	background-image: linear-gradient(to bottom, black, transparent);
+}
+
+.navbar.navbar-dark .navbar-corner::before,
+.navbar.navbar-dark .navbar-corner .nav-item::before {
+	color: rgba(255,255,255,.5);
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link span::before {
+	background-color: rgba(255,255,255,.5);
+}
+
+.navbar.navbar-dark.invert {
+	background-image: none;
+	background-color: white;
+}
+
+/*navbar light*/
+
+.navbar.navbar-light {
+	background-color: white;
+}
+
+.navbar.navbar-light .navbar-corner::before,
+.navbar.navbar-light .navbar-corner .nav-item::before {
+	color: rgba(0,0,0,.5);
+}
+
+.navbar.navbar-light .navbar-nav .nav-link span::before {
+	background-color: rgba(0,0,0,.5);
 }
 
 /* ---------------------------------------------------------
@@ -272,13 +333,13 @@ COPYRIGHT
 
 .carousel-dark .carousel-caption,
 .carousel-dark .carousel-number {
-	color: #ffffff;
+	color: white;
 }
 
 .carousel-dark .carousel-control-prev,
 .carousel-dark .carousel-control-next,
 .carousel-dark .carousel-indicators li {
-	color: #ffffff;
+	color: white;
 	border-width: 0;
 	background-color: transparent;
 }
