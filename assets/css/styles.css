@@ -26,7 +26,8 @@ html, body {
 
 /*struktur*/
 
-.container {
+.container,
+.container-lg {
 	width: 95%;
 	max-width: 1320px;
 }	
@@ -206,7 +207,7 @@ NAVBAR
 	.navbar-nav .nav-link span::before {
 		content: '';
 		position: absolute;
-		bottom: -.5rem;
+		bottom: -.25rem;
 		width: 0;
 		height: 2px;
 		transition: .36s;
@@ -247,6 +248,15 @@ NAVBAR
 	background-color: white;
 }
 
+.navbar.navbar-dark.invert .navbar-nav .nav-link {
+	color: rgba(0, 0, 0, .5);
+}
+
+.navbar.navbar-dark.invert .navbar-nav .nav-link:hover,
+.navbar.navbar-dark.invert .navbar-nav .nav-link.active {
+	color: rgba(0, 0, 0, 1.0);
+}
+
 /*navbar light*/
 
 .navbar.navbar-light {
@@ -254,11 +264,14 @@ NAVBAR
 }
 
 .navbar.navbar-light .navbar-corner::before,
-.navbar.navbar-light .navbar-corner .nav-item::before {
+.navbar.navbar-light .navbar-corner .nav-item::before,
+.navbar.navbar-dark.invert .navbar-corner::before,
+.navbar.navbar-dark.invert .navbar-corner .nav-item::before {
 	color: rgba(0,0,0,.5);
 }
 
-.navbar.navbar-light .navbar-nav .nav-link span::before {
+.navbar.navbar-light .navbar-nav .nav-link span::before,
+.navbar.navbar-dark.invert .navbar-nav .nav-link span::before {
 	background-color: rgba(0,0,0,.5);
 }
 

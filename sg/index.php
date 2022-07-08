@@ -177,6 +177,7 @@
 
 			$('#navtop').removeClass('navbar-light');
 			$('#navtop').addClass('navbar-dark');
+			$('#footer-home').addClass('active');
 
 		});
 	</script>

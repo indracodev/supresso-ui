@@ -2,15 +2,15 @@
 	<div class="border-top border-secondary">
 		<div class="container py-5">
 			<ol class="breadcrumb mb-5" id="breadcrumb1">
-				<li class="breadcrumb-item"><a href="#">HOME</a></li>
-				<li class="breadcrumb-item"><a href="#">BEANS</a></li>
-				<li class="breadcrumb-item"><a href="#">GROUND</a></li>
-				<li class="breadcrumb-item"><a href="#">DRIP</a></li>
-				<li class="breadcrumb-item"><a href="#">CAPSULES</a></li>
-				<li class="breadcrumb-item"><a href="#">MEMBERSHIP</a></li>
-				<li class="breadcrumb-item"><a href="#">CONTACT</a></li>
-				<li class="breadcrumb-item"><a href="#">BROCHURE</a></li>
-				<li class="breadcrumb-item"><a href="#">NEWS & EVENTS</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-home">HOME</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-beans">BEANS</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-ground">GROUND</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-drip">DRIP</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-capsules">CAPSULES</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-membership">MEMBERSHIP</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-contact">CONTACT</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-brochure">BROCHURE</a></li>
+				<li class="breadcrumb-item"><a href="#" id="footer-news">NEWS & EVENTS</a></li>
 			</ol>
 
 			<div id="footer-sosmed">
