@@ -80,18 +80,49 @@ $(document).ready(function() {
 
 		$('.navbar-toggler').click(function() {
 			$('.submenu').removeClass('active');
+
+			if ($('.navbar-toggler').hasClass('collapsed')) {
+				$('html').addClass('no-scroll');
+				$('.navbar-dark').addClass('menu-open');
+			} else {
+				$('html').removeClass('no-scroll');
+				$('.navbar-dark').removeClass('menu-open');
+			}
+		});
+
+	} else if ($(window).width() >= 992) {
+
+		$('#nav-coffee-desktop').click(function() {
+			if ($('#navcol1').hasClass('show')) {
+				$('html').removeClass('no-scroll');
+				$('.navbar-dark').removeClass('menu-open');
+			} else {
+				$('html').addClass('no-scroll');
+				$('.navbar-dark').addClass('menu-open');
+			}
 		});
 
 	}
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > 100) {
+		if ($(window).scrollTop()) {
 			$('.navbar.navbar-dark').addClass('invert');
+			$('#navtop').addClass('to-top');
 		} else {
 			$('.navbar.navbar-dark').removeClass('invert');
+			$('#navtop').removeClass('to-top');
+		}
+	});
+
+	$(window).ready(function() {
+		if ($('.navbar').hasClass('navbar-dark')) {
+			$('.carousel-banner').addClass('bg-navbar');
+		} else if ($('.navbar').hasClass('navbar-light')) {
+			$('.carousel-banner').removeClass('bg-navbar');
 		}
 	});
 
 	// ----------- all about carousel
 	$('.carousel-banner .carousel-item').height($(window).height());
-})
+
+});

@@ -1,4 +1,4 @@
-<nav id="navtop" class="navbar navbar-light px-0 py-lg-5">
+<nav id="navtop" class="navbar navbar-light px-0 position-relative">
 	<div class="container">
 		<a href="<?php echo $supressoSG ?>" class="navbar-brand p-lg-0">
 			<img src="<?php echo $supresso ?>assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none" alt="">
@@ -6,7 +6,7 @@
 		</a>
 
 		<ul class="navbar-nav d-none d-lg-flex flex-row ml-lg-auto">
-			<li class="nav-item"><a data-toggle="collapse" href="#navcol1" class="nav-link"><span>COFFEE</span></a></li>
+			<li class="nav-item"><a data-toggle="collapse" href="#navcol1" class="nav-link" id="nav-coffee-desktop"><span>COFFEE</span></a></li>
 			<li class="nav-item"><a href="#" class="nav-link"><span>MACHINES</span></a></li>
 			<li class="nav-item"><a href="#" class="nav-link"><span>EXPLORE</span></a></li>
 			<li class="nav-item"><a href="#" class="nav-link"><span>PARTNERSHIPS</span></a></li>
@@ -35,7 +35,7 @@
 						<input type="search" name="" placeholder="Search" class="form-control border-0 px-0">
 					</form>
 					<ul class="navbar-nav py-3">
-						<li class="nav-item"><a href="#" class="nav-link" id="nav-coffee-mobile"><span>COFFEE</span></a></li>
+						<li class="nav-item"><a class="nav-link" id="nav-coffee-mobile"><span>COFFEE</span></a></li>
 						<li class="nav-item"><a href="#" class="nav-link"><span>MACHINES</span></a></li>
 						<li class="nav-item"><a href="#" class="nav-link"><span>EXPLORE</span></a></li>
 						<li class="nav-item"><a href="#" class="nav-link"><span>PARTNERSHIPS</span></a></li>
@@ -54,10 +54,10 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-beans"><span>BEANS</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-ground"><span>GROUND</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-drip"><span>DRIP</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link" id="nav-capsules"><span>CAPSULES</span></a></li>
+							<li class="nav-item"><a class="nav-link" id="nav-beans"><span>BEANS</span></a></li>
+							<li class="nav-item"><a class="nav-link" id="nav-ground"><span>GROUND</span></a></li>
+							<li class="nav-item"><a class="nav-link" id="nav-drip"><span>DRIP</span></a></li>
+							<li class="nav-item"><a class="nav-link" id="nav-capsules"><span>CAPSULES</span></a></li>
 						</ul>
 					</div>
 				</div>

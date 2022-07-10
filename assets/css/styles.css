@@ -24,13 +24,54 @@ html, body {
 	}
 }
 
+/*all about no scroll*/
+
+html.no-scroll {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.no-scroll body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.backdrop-no-scroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, .75);
+	opacity: 0;
+	visibility: hidden;
+	transition: .36s;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+}
+
+.no-scroll .backdrop-no-scroll {
+	opacity: 1;
+	visibility: visible;
+}
+
 /*struktur*/
 
 .container,
 .container-lg {
 	width: 95%;
 	max-width: 1320px;
-}	
+}
+
+@media (min-width: 992px) {
+	.container,
+	.container-lg {
+		width: 90%;
+	}
+}
 
 main.wrapper section {
 	min-height: 50vh;
@@ -93,7 +134,8 @@ NAVBAR
 --------------------------------------------------------- */
 
 #main-header,
-.navbar {
+.navbar,
+.navbar-brand img {
 	transition: .36s;
 }
 
@@ -186,6 +228,20 @@ NAVBAR
 }
 
 @media (min-width: 992px) {
+	#navtop {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	#navtop.to-top {
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+	}
+
+	#navtop.to-top .navbar-brand img.d-lg-block {
+		width: 60px;
+	}
+
 	#navcol1 .img-tumbnails {
 		max-width: 175px;
 	}
@@ -230,8 +286,22 @@ NAVBAR
 
 /*navbar dark*/
 
-.navbar.navbar-dark {
+.carousel-banner.bg-navbar::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 50vh;
 	background-image: linear-gradient(to bottom, black, transparent);
+	z-index: 1;
+}
+
+@media (min-width: 992px) {
+	.carousel-banner.bg-navbar::before {
+		height: 480px;
+	}
 }
 
 .navbar.navbar-dark .navbar-corner::before,
@@ -243,18 +313,29 @@ NAVBAR
 	background-color: rgba(255,255,255,.5);
 }
 
-.navbar.navbar-dark.invert {
-	background-image: none;
+.navbar.navbar-dark.invert,
+.navbar.navbar-dark.menu-open {
 	background-color: white;
 }
 
-.navbar.navbar-dark.invert .navbar-nav .nav-link {
+.navbar.navbar-dark.invert .navbar-nav .nav-link,
+.navbar.navbar-dark.menu-open .navbar-nav .nav-link {
 	color: rgba(0, 0, 0, .5);
 }
 
 .navbar.navbar-dark.invert .navbar-nav .nav-link:hover,
-.navbar.navbar-dark.invert .navbar-nav .nav-link.active {
+.navbar.navbar-dark.invert .navbar-nav .nav-link.active,
+.navbar.navbar-dark.menu-open .navbar-nav .nav-link:hover,
+.navbar.navbar-dark.menu-open .navbar-nav .nav-link.active {
 	color: rgba(0, 0, 0, 1.0);
+}
+
+.navbar-dark .navbar-toggler {
+	color: black;
+}
+
+.navbar-dark.invert .navbar-toggler .navbar-toggler-icon {
+	filter: invert(1);
 }
 
 /*navbar light*/
@@ -266,12 +347,15 @@ NAVBAR
 .navbar.navbar-light .navbar-corner::before,
 .navbar.navbar-light .navbar-corner .nav-item::before,
 .navbar.navbar-dark.invert .navbar-corner::before,
-.navbar.navbar-dark.invert .navbar-corner .nav-item::before {
+.navbar.navbar-dark.invert .navbar-corner .nav-item::before,
+.navbar.navbar-dark.menu-open .navbar-corner::before,
+.navbar.navbar-dark.menu-open .navbar-corner .nav-item::before {
 	color: rgba(0,0,0,.5);
 }
 
 .navbar.navbar-light .navbar-nav .nav-link span::before,
-.navbar.navbar-dark.invert .navbar-nav .nav-link span::before {
+.navbar.navbar-dark.invert .navbar-nav .nav-link span::before,
+.navbar.navbar-dark.menu-open .navbar-nav .nav-link span::before {
 	background-color: rgba(0,0,0,.5);
 }
 

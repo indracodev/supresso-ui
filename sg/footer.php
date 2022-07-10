@@ -39,6 +39,8 @@
 	</div>
 </footer>
 
+<div class="backdrop-no-scroll"></div>
+
 <script type="text/javascript" src="<?php echo $supresso ?>assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo $supresso ?>assets/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="<?php echo $supresso ?>assets/js/custom.js"></script>

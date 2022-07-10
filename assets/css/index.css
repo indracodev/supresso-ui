@@ -75,7 +75,8 @@
 
 @media (max-width: 991.98px) {	
 	#tiles .container-fluid {
-		padding: 0!important;
+		width: 100%;
+		padding: 0;
 	}
 }
 
