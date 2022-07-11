@@ -14,7 +14,7 @@
 		<?php include 'navbar.php' ?>
 	</header>
 
-	<main class="wrapper">
+	<main class="wrapper pt-0">
 		<section class="mb-0">
 			<div id="home-banner" class="carousel slide carousel-banner carousel-dark" data-ride="carousel">
 				<div class="carousel-control">
@@ -85,7 +85,7 @@
 			<div class="container-fluid container-lg">
 				<div class="row baris">
 					<div class="col-md-6 kolom">
-						<a href="#" class="text-white">
+						<a href="<?php echo $supressoSG ?>products" class="text-white">
 							<div class="card">
 								<img src="<?php echo $supresso ?>assets/img/home/home_balicafe.jpg" class="card-img w-100" alt="">
 							</div>
@@ -93,7 +93,7 @@
 					</div>
 
 					<div class="col-md-6 kolom">
-						<a href="#" class="text-white">
+						<a href="<?php echo $supressoSG ?>products" class="text-white">
 							<div class="card">
 								<img src="<?php echo $supresso ?>assets/img/home/home_maps.jpg" class="card-img w-100" alt="">
 								<div class="card-img-overlay">
@@ -104,7 +104,7 @@
 					</div>
 
 					<div class="col-6 col-md-3 kolom">
-						<a href="#" class="text-white">
+						<a href="<?php echo $supressoSG ?>products" class="text-white">
 							<div class="card">
 								<img src="<?php echo $supresso ?>assets/img/home/home_beans.jpg" class="card-img w-100" alt="">
 								<div class="card-img-overlay">
@@ -115,7 +115,7 @@
 					</div>
 
 					<div class="col-6 col-md-3 kolom">
-						<a href="#" class="text-white">
+						<a href="<?php echo $supressoSG ?>products" class="text-white">
 							<div class="card">
 								<img src="<?php echo $supresso ?>assets/img/home/home_ground.jpg" class="card-img w-100" alt="">
 								<div class="card-img-overlay">
@@ -126,7 +126,7 @@
 					</div>
 
 					<div class="col-6 col-md-3 kolom">
-						<a href="#" class="text-white">
+						<a href="<?php echo $supressoSG ?>products" class="text-white">
 							<div class="card">
 								<img src="<?php echo $supresso ?>assets/img/home/home_drip.jpg" class="card-img w-100" alt="">
 								<div class="card-img-overlay">
@@ -137,7 +137,7 @@
 					</div>
 
 					<div class="col-6 col-md-3 kolom">
-						<a href="#" class="text-white">
+						<a href="<?php echo $supressoSG ?>products" class="text-white">
 							<div class="card">
 								<img src="<?php echo $supresso ?>assets/img/home/home_capsules.jpg" class="card-img w-100" alt="">
 								<div class="card-img-overlay">

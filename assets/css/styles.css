@@ -45,12 +45,12 @@ html.no-scroll {
 	width: 100%;
 	height: 100%;
 	z-index: 1000;
-	background-color: rgba(0, 0, 0, .75);
+	background-color: rgba(0, 0, 0, .5);
 	opacity: 0;
 	visibility: hidden;
 	transition: .36s;
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
+	/*-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);*/
 }
 
 .no-scroll .backdrop-no-scroll {
@@ -73,8 +73,11 @@ html.no-scroll {
 	}
 }
 
-main.wrapper section {
+main.wrapper {
 	min-height: 50vh;
+}
+
+main.wrapper section {
 	margin-bottom: 5rem;
 }
 
@@ -95,6 +98,20 @@ main.wrapper section {
 	.container-lg-fluid {
 		width: 100%;
 		max-width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.border-xl-left {
+		border-left: solid 1px #6c757d!important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.row-cols-xxl-5>* {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
 	}
 }
 
@@ -413,6 +430,7 @@ COPYRIGHT
 
 #footer-sosmed a:hover i {
 	transform: scale(1.25);
+	border-color: #3a3a3a;
 }
 
 @media (min-width: 992px) {

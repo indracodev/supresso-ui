@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	// ----------- struktur
+	$('.wrapper').css({ 'padding-top': ($('#main-header').height()) });
+
 	// ----------- refresh layar
 	if ($(window).width() <= 767.98) {
 		var windowWidth = $(window).width();

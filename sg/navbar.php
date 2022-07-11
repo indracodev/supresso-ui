@@ -73,12 +73,24 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Single Origin</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Luwak Prestige</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Organic</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Rainforest</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Gourmet</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>World Blend</span></a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -94,12 +106,24 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Single Origin</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Luwak Prestige</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Organic</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Rainforest</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Gourmet</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>World Blend</span></a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -115,12 +139,24 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Single Origin</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Luwak Prestige</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Organic</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Rainforest</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Gourmet</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>World Blend</span></a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -136,12 +172,24 @@
 					</header>
 					<div class="container container-lg-fluid px-lg-0">
 						<ul class="navbar-nav py-3 py-lg-0 w-100">
-							<li class="nav-item"><a href="#" class="nav-link"><span>Single Origin</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Luwak Prestige</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Organic</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Rainforest</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>Gourmet</span></a></li>
-							<li class="nav-item"><a href="#" class="nav-link"><span>World Blend</span></a></li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Single Origin</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Luwak Prestige</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Organic</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Rainforest</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>Gourmet</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="<?php echo $supressoSG ?>products" class="nav-link"><span>World Blend</span></a>
+							</li>
 						</ul>
 					</div>
 				</div>

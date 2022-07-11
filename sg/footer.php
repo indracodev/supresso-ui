@@ -2,11 +2,11 @@
 	<div class="border-top border-secondary">
 		<div class="container py-5">
 			<ol class="breadcrumb mb-5" id="breadcrumb1">
-				<li class="breadcrumb-item"><a href="#" id="footer-home">HOME</a></li>
-				<li class="breadcrumb-item"><a href="#" id="footer-beans">BEANS</a></li>
-				<li class="breadcrumb-item"><a href="#" id="footer-ground">GROUND</a></li>
-				<li class="breadcrumb-item"><a href="#" id="footer-drip">DRIP</a></li>
-				<li class="breadcrumb-item"><a href="#" id="footer-capsules">CAPSULES</a></li>
+				<li class="breadcrumb-item"><a href="<?php echo $supressoSG ?>" id="footer-home">HOME</a></li>
+				<li class="breadcrumb-item"><a href="<?php echo $supressoSG ?>products" id="footer-beans">BEANS</a></li>
+				<li class="breadcrumb-item"><a href="<?php echo $supressoSG ?>products" id="footer-ground">GROUND</a></li>
+				<li class="breadcrumb-item"><a href="<?php echo $supressoSG ?>products" id="footer-drip">DRIP</a></li>
+				<li class="breadcrumb-item"><a href="<?php echo $supressoSG ?>products" id="footer-capsules">CAPSULES</a></li>
 				<li class="breadcrumb-item"><a href="#" id="footer-membership">MEMBERSHIP</a></li>
 				<li class="breadcrumb-item"><a href="#" id="footer-contact">CONTACT</a></li>
 				<li class="breadcrumb-item"><a href="#" id="footer-brochure">BROCHURE</a></li>
