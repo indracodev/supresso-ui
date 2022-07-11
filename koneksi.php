@@ -1,7 +1,7 @@
 <?php
 
-$supresso = "http://localhost/supresso-ui/";
-$supressoSG = "http://localhost/supresso-ui/sg/";
-$supressoID = "http://localhost/supresso-ui/id/";
+$supresso = "http://192.168.1.94/supresso-ui/";
+$supressoSG = "http://192.168.1.94/supresso-ui/sg/";
+$supressoID = "http://192.168.1.94/supresso-ui/id/";
 
 ?>

@@ -5,6 +5,7 @@
 
 <head>
     <?php include '../meta.php' ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo $supresso ?>assets/css/product.css">
     <title>SUPRESSO · Our Collection</title>
 </head>
 
@@ -19,10 +20,10 @@
                 <div class="container">
                     <div class="d-lg-flex justify-content-between">
                         <h4 class="gotham-bold mb-0">Coffee Collection</h4>
-                        <button class="btn p-0 collapsed" data-toggle="collapse" data-target="#filter-collapse">Filter | Sort by <i class="bi bi-chevron-down"></i></button>
+                        <button class="btn p-0 collapsed" id="open-filter" data-toggle="collapse" data-target="#filter-collapse">Filter | Sort by <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></button>
                     </div>
 
-                    <div class="collapse show" id="filter-collapse">
+                    <div class="collapse" id="filter-collapse">
                         <form action="" class="pt-3">
                             <div class="container-fluid border border-secondary py-3 rounded">
                                 <div class="mb-4 mb-lg-0">
@@ -34,6 +35,8 @@
                                             <button class="btn btn-sm btn-light rounded mb-1"><small>Popular Products <i class="bi bi-x-circle"></i></small></button>
                                         </div>
 
+                                        <div class="col-12 d-lg-none"><hr class="mt-0"></div>
+
                                         <div class="col-lg-4">
                                             <div class="btn-group w-100">
                                                 <button class="btn btn-light rounded mr-1">Reset</button>
@@ -43,10 +46,10 @@
                                     </div>
                                 </div>
 
-                                <hr>
+                                <hr class="d-none d-lg-block">
                                 
-                                <div class="row">
-                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0">
+                                <div class="row justify-content-lg-around">
+                                    <div class="col-6 col-md-4 col-lg-auto mb-4 mb-xl-0">
                                         <h6 class="gotham-bold mb-3">Collection</h6>
                                         <div>
                                             <div class="form-check">
@@ -81,7 +84,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0">
+                                    <div class="col-6 col-md-4 col-lg-auto mb-4 mb-xl-0">
                                         <h6 class="gotham-bold mb-3">Type</h6>
                                         <div>
                                             <div class="form-check">
@@ -101,7 +104,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0">
+                                    <div class="col-6 col-md-4 col-lg-auto mb-4 mb-xl-0">
                                         <h6 class="gotham-bold mb-3">Form</h6>
                                         <div>
                                             <div class="form-check">
@@ -126,7 +129,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0">
+                                    <div class="col-6 col-md-4 col-lg-auto mb-4 mb-xl-0">
                                         <h6 class="gotham-bold mb-3">Packaging</h6>
                                         <div>
                                             <div class="form-check">
@@ -156,7 +159,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0">
+                                    <div class="col-6 col-md-4 col-lg-auto mb-4 mb-xl-0">
                                         <h6 class="gotham-bold mb-3">Weight</h6>
                                         <div>
                                             <div class="form-check">
@@ -191,7 +194,10 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0 border-xl-left">
+                                    <div class="col-auto px-0 d-none d-lg-block border-left"></div>
+
+                                    <div class="col-12 col-lg-auto mb-4 mb-xl-0">
+                                        <hr class="mt-0 d-lg-none">
                                         <h6 class="gotham-bold mb-3">Sort by</h6>
                                         <div>
                                             <div class="form-check">

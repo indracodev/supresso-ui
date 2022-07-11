@@ -1,0 +1,5 @@
+/*carousel banner*/
+.carousel-banner .carousel-inner .carousel-item {
+	height: 100vh;
+	background-color: #323232;
+}
