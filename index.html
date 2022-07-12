@@ -11,51 +11,449 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 	<title>SUPRESSO · Home</title>
+	<style type="text/css">
+		/*home banner*/
+		#home-banner .carousel-item:nth-of-type(1) {
+			background-image: url(assets/img/landingSG/m_assorted.jpg);
+		}
+		#home-banner .carousel-item:nth-of-type(2) {
+			background-image: url(assets/img/landingSG/m_exotic.jpg);
+		}
+		#home-banner .carousel-item:nth-of-type(3) {
+			background-image: url(assets/img/landingSG/m_lampung.jpg);
+		}
+
+		@media (min-width: 992px) {
+			#home-banner .carousel-title {
+				font-size: calc(3rem + 2vw)!important;
+			}
+
+			#home-banner .carousel-item:nth-of-type(1) {
+				background-image: url(assets/img/landingSG/d_assorted.jpg);
+			}
+			#home-banner .carousel-item:nth-of-type(2) {
+				background-image: url(assets/img/landingSG/d_exotic.jpg);
+			}
+			#home-banner .carousel-item:nth-of-type(3) {
+				background-image: url(assets/img/landingSG/d_lampung.jpg);
+			}
+		}
+
+		/*home banner*/
+		#tiles .card-img-overlay {
+			top: initial;
+		}
+
+		@media (max-width: 991.98px) {
+			#tiles .container-fluid {
+				padding: 0;
+			}
+
+			#tiles .row {
+				margin-left: -.5rem;
+			}
+
+			#tiles .col {
+				padding-left: .5rem;
+				margin-top: .5rem;
+			}
+		}
+
+		@media (min-width: 992px) {
+			#tiles .col {
+				margin-top: 15px;
+			}
+
+			#tiles .col-md-6 .card-img-overlay {
+				padding: 7%;
+			}
+
+			#tiles .col-md-6 .card-title {
+				font-size: calc(1.75rem + .1vw);
+			}
+		}
+	</style>
 </head>
 <body>
 
-	<nav class="navbar navbar-light navbar-expand-lg fixed-top">
-		
-	</nav>
+	<nav id="navbar" class="navbar navbar-light navbar-expand-lg fixed-top d-block p-0 overflow-hidden">
+		<div class="container-fluid container-lg" id="navtop">
+			<a href="index.html" class="navbar-brand">
+				<img src="assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none">
+				<img src="assets/img/navbar/logo.png" width="80" height="auto" class="d-none d-lg-block">
+			</a>
 
-	<main class="wrapper">
-		<section>
-			<div id="home-banner" class="carousel slide carousel-banner" data-ride="carousel">
+			<div class="navbar-corner ml-auto order-lg-2 ml-lg-4">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item d-none d-lg-block">
+						<a href="#" class="nav-link">SEARCH</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">PROFILE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">CART [8]</a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="navbar-toggler rounded-0 border-0 ml-2 collapsed" data-toggle="collapse" data-target="#navcol-1">
+				<span class="navbar-toggler-icon"></span>
+				<i class="bi bi-x-lg"></i>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navcol-1">
+				<div class="d-lg-none border-bottom border-secondary">
+					<form class="form-inline flex-nowrap">
+						<button class="btn p-3"><i class="bi bi-search"></i></button>
+						<input type="search" name="Search" placeholder="Search" class="form-control rounded-0 border-0">
+					</form>
+				</div>
+
+				<ul class="navbar-nav ml-lg-auto py-4 py-lg-0">
+					<li class="nav-item">
+						<a data-toggle="collapse" href="#navcol-2" class="nav-link d-none d-lg-block" id="nav-coffee-d">COFFEE</a>
+						<a href="#" class="nav-link d-lg-none" id="nav-coffee-m">COFFEE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">MACHINES</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">EXPLORE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">PARTNERSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">CAFE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">GALLERY</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- end of navtop -->
+
+		<div class="collapse" id="navcol-2">
+			<div class="border-top" id="navdown">
+				<div class="container-fluid container-lg d-block py-lg-5">
+					<div class="row align-items-lg-end">
+						<div class="col col-lg-auto d-lg-none" id="navbar-coffee">
+							<header class="mb-lg-4 border-top border-bottom border-lg-0">
+								<div class="container-fluid px-lg-0">
+									<div class="d-flex align-items-center">
+										<button class="btn rounded-0 border-right d-lg-none p-3">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0"><span class="gotham-bold">COFFEE</span></div>
+									</div>
+								</div>
+							</header>
+
+							<div class="container-fluid px-lg-0">
+								<ul class="navbar-nav flex-column w-100 py-4 py-lg-0">
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0" id="nav-beans">BEANS</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0" id="nav-ground">GROUND</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0" id="nav-drip">DRIP</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0" id="nav-capsules">CAPSULES</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col col-lg-auto" id="navbar-beans">
+							<header class="mb-lg-4 border-top border-bottom border-lg-0">
+								<div class="container-fluid px-lg-0">
+									<div class="d-flex align-items-center">
+										<button class="btn rounded-0 border-right d-lg-none p-3">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0"><span class="gotham-bold">BEANS</span></div>
+									</div>
+								</div>
+							</header>
+
+							<div class="container-fluid px-lg-0">
+								<ul class="navbar-nav flex-column w-100 py-4 py-lg-0">
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col col-lg-auto" id="navbar-ground">
+							<header class="mb-lg-4 border-top border-bottom border-lg-0">
+								<div class="container-fluid px-lg-0">
+									<div class="d-flex align-items-center">
+										<button class="btn rounded-0 border-right d-lg-none p-3">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0"><span class="gotham-bold">GROUND</span></div>
+									</div>
+								</div>
+							</header>
+
+							<div class="container-fluid px-lg-0">
+								<ul class="navbar-nav flex-column w-100 py-4 py-lg-0">
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col col-lg-auto" id="navbar-drip">
+							<header class="mb-lg-4 border-top border-bottom border-lg-0">
+								<div class="container-fluid px-lg-0">
+									<div class="d-flex align-items-center">
+										<button class="btn rounded-0 border-right d-lg-none p-3">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0"><span class="gotham-bold">DRIP</span></div>
+									</div>
+								</div>
+							</header>
+
+							<div class="container-fluid px-lg-0">
+								<ul class="navbar-nav flex-column w-100 py-4 py-lg-0">
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col col-lg-auto" id="navbar-capsules">
+							<header class="mb-lg-4 border-top border-bottom border-lg-0">
+								<div class="container-fluid px-lg-0">
+									<div class="d-flex align-items-center">
+										<button class="btn rounded-0 border-right d-lg-none p-3">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0"><span class="gotham-bold">CAPSULES</span></div>
+									</div>
+								</div>
+							</header>
+
+							<div class="container-fluid px-lg-0">
+								<ul class="navbar-nav flex-column w-100 py-4 py-lg-0">
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link px-0">Single Origin</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col col-lg-auto ml-auto d-none d-lg-block">
+							<div class="img-thumbnails" style="max-width: 210px;">
+								<img src="assets/img/navbar/box.jpg" class="img-fluid">
+							</div>
+						</div>
+					</div><!-- end of submenu-list (row) by form -->
+				</div>
+			</div>
+		</div><!-- end of navdown -->
+	</nav><!-- end of navbar -->
+
+	<div id="notif-subscriber" class="notif fixed-bottom shadow">
+		<div class="d-lg-none py-2">
+			<a href="#" class="text-decoration-none">
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto">
+							<h4 class="gotham-bold m-0" style="line-height: 1;">Get 10% OFF*</h4>
+							<p class="m-0 opacity-50" style="font-size: .6rem;">Your first order when you subscribe to our newsletter!</p>
+						</div>
+						<div class="col-auto" style="font-size: 2rem; line-height: 1;"><i class="bi bi-chevron-right"></i></div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="d-none d-lg-block py-2">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-4">
+						<h2 class="gotham-bold m-0">Get 10% OFF*</h2>
+						<label class="small opacity-50">Your first order when you subscribe to our newsletter!</label>	
+					</div>
+					<div class="col-5">
+						<form class="border-bottom border-secondary">
+							<input type="email" name="email" placeholder="Email Address" class="form-control rounded-0 border-0 bg-transparent px-0" onmouseover="this.select()">
+						</form>
+					</div>
+					<div class="col-3">
+						<button class="btn btn-block btn-light active">CLAIM MY 10% OFF</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end of notification (subscribe get 10%) -->
+
+	<main class="wrapper pt-0">
+		<section class="mb-0">
+			<div id="home-banner" class="carousel slide carousel-banner" data-ride="carousel" data-interval="false">
+				<div class="carousel-control">
+					<button class="carousel-control-prev position-relative bg-transparent border-0" data-target="#home-banner" data-slide="prev">
+						<i class="bi bi-chevron-left"></i>
+					</button>
+					<div class="carousel-number d-flex align-items-end mx-2 text-white">
+						<ol class="carousel-indicators position-relative m-0">
+							<li data-slide-to="0" class="active">01</li>
+							<li data-slide-to="1">02</li>
+							<li data-slide-to="2">03</li>
+						</ol>/ <small class="opacity-50"><small>03</small></small>
+					</div>
+					<button class="carousel-control-next position-relative bg-transparent border-0" data-target="#home-banner" data-slide="next">
+						<i class="bi bi-chevron-right"></i>
+					</button>
+				</div>
+
 				<div class="carousel-inner">
-					<div class="carousel-item active"></div>
+					<div class="carousel-item active">
+						<div class="carousel-caption text-left">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-7">
+										<h1 class="carousel-title display-4 gotham-medium">20% OFF</h1>
+										<h3 class="carousel-subtitle gotham-thin">ASSORTED CAPSULES</h3>
+										<p class="carousel-text">Single Origin Collection | Gourmet Collection</p>
+										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carousel-caption text-left">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-7">
+										<h1 class="carousel-title display-4 gotham-medium">30% OFF</h1>
+										<h3 class="carousel-subtitle gotham-thin">EXOTIC BAG 1KG</h3>
+										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carousel-caption text-left">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-7">
+										<h1 class="carousel-title display-4 gotham-medium">20% OFF</h1>
+										<h3 class="carousel-subtitle gotham-thin">ALL GROUND COFFEE</h3>
+										<p class="carousel-text">Single Origin Collection</p>
+										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section><!-- end of home banner -->
 
-		<section id="tiles">
+		<section id="tiles" class="overflow-hidden text-white">
 			<div class="container-fluid container-lg">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<a href="#">
-							<div class="card">
-								<img src="assets/img/home/home_balicafe.jpg" class="card-img">
+				<div class="row mr-0">
+					<div class="col col-12 col-md-6 pr-0">
+						<a href="#" class="text-white">
+							<div class="card rounded-0 border-0">
+								<img src="assets/img/home/home_balicafe.jpg" class="card-img rounded-0">
 								<div class="card-img-overlay">
-									<h5 class="card-titled"><small>OUR</small><br>Locations</h5>
+									<h5 class="card-title"><small>OUR</small><br>Locations</h5>
 								</div>
 							</div>
 						</a>
 					</div>
 
-					<div class="col col-12 col-md-6">
-						<a href="#">
-							<div class="card">
-								<img src="assets/img/home/home_maps.jpg" class="card-img">
+					<div class="col col-12 col-md-6 pr-0">
+						<a href="#" class="text-white">
+							<div class="card rounded-0 border-0">
+								<img src="assets/img/home/home_maps.jpg" class="card-img rounded-0">
 								<div class="card-img-overlay">
-									<h5 class="card-titled"><small>OUR</small><br>Locations</h5>
+									<h5 class="card-title"><small>OUR</small><br>Locations</h5>
 								</div>
 							</div>
 						</a>
 					</div>
 
-					<div class="col col-6 col-md-3">
-						<a href="#">
-							<div class="card">
-								<img src="assets/img/home/home_beans.jpg" class="card-img">
+					<div class="col col-6 col-md-3 pr-0">
+						<a href="#" class="text-white">
+							<div class="card rounded-0 border-0">
+								<img src="assets/img/home/home_beans.jpg" class="card-img rounded-0">
 								<div class="card-img-overlay">
 									<p class="card-text">Beans Collection</p>
 								</div>
@@ -63,10 +461,10 @@
 						</a>
 					</div>
 
-					<div class="col col-6 col-md-3">
-						<a href="#">
-							<div class="card">
-								<img src="assets/img/home/home_ground.jpg" class="card-img">
+					<div class="col col-6 col-md-3 pr-0">
+						<a href="#" class="text-white">
+							<div class="card rounded-0 border-0">
+								<img src="assets/img/home/home_ground.jpg" class="card-img rounded-0">
 								<div class="card-img-overlay">
 									<p class="card-text">Ground Collection</p>
 								</div>
@@ -74,10 +472,10 @@
 						</a>
 					</div>
 
-					<div class="col col-6 col-md-3">
-						<a href="#">
-							<div class="card">
-								<img src="assets/img/home/home_drip.jpg" class="card-img">
+					<div class="col col-6 col-md-3 pr-0">
+						<a href="#" class="text-white">
+							<div class="card rounded-0 border-0">
+								<img src="assets/img/home/home_drip.jpg" class="card-img rounded-0">
 								<div class="card-img-overlay">
 									<p class="card-text">Drip Collection</p>
 								</div>
@@ -85,10 +483,10 @@
 						</a>
 					</div>
 
-					<div class="col col-6 col-md-3">
-						<a href="#">
-							<div class="card">
-								<img src="assets/img/home/home_capsules.jpg" class="card-img">
+					<div class="col col-6 col-md-3 pr-0">
+						<a href="#" class="text-white">
+							<div class="card rounded-0 border-0">
+								<img src="assets/img/home/home_capsules.jpg" class="card-img rounded-0">
 								<div class="card-img-overlay">
 									<p class="card-text">Capsules Collection</p>
 								</div>
@@ -96,34 +494,34 @@
 						</a>
 					</div>
 
-					<div class="col col-12 col-md-6">
-							<div class="card">
-								<img src="assets/img/home/home_fb.jpg" class="card-img">
-								<div class="card-img-overlay">
-									<h5 class="card-titled"><small>OUR</small><br>Facebook</h5>
-									<button class="btn btn-sm btn-outline-light"><small>MORE INFO</small></button>
-								</div>
+					<div class="col col-12 col-md-6 pr-0">
+						<div class="card rounded-0 border-0">
+							<img src="assets/img/home/home_fb.jpg" class="card-img rounded-0">
+							<div class="card-img-overlay">
+								<h5 class="card-title"><small>OUR</small><br>Facebook</h5>
+								<a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE INFO</small></a>
 							</div>
+						</div>
 					</div>
 
-					<div class="col col-12 col-md-6">
-							<div class="card">
-								<img src="assets/img/home/home_gallery.jpg" class="card-img">
-								<div class="card-img-overlay">
-									<h5 class="card-titled"><small>Supresso</small><br>Gallery</h5>
-									<button class="btn btn-sm btn-outline-light"><small>MORE INFO</small></button>
-								</div>
+					<div class="col col-12 col-md-6 pr-0">
+						<div class="card rounded-0 border-0">
+							<img src="assets/img/home/home_gallery.jpg" class="card-img rounded-0">
+							<div class="card-img-overlay">
+								<h5 class="card-title"><small>Supresso</small><br>Gallery</h5>
+								<a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE INFO</small></a>
 							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section><!-- end of tiles -->
 	</main><!-- end of wrapper -->
 
-	<footer id="copyright">
+	<footer id="copyright" class="text-center">
 		<div class="border-top border-secondary">
 			<div class="container py-5">
-				<ol class="breadcrumb mb-5" id="breadcrumb1">
+				<ol class="breadcrumb mb-5 justify-content-center" id="breadcrumb1">
 					<li class="breadcrumb-item"><a href="index.html" id="footer-home">HOME</a></li>
 					<li class="breadcrumb-item"><a href="#" id="footer-beans">BEANS</a></li>
 					<li class="breadcrumb-item"><a href="#" id="footer-ground">GROUND</a></li>
@@ -148,7 +546,7 @@
 			<div class="container py-4">
 				<div class="row">
 					<div class="col-lg-auto">
-						<ol class="breadcrumb mb-4 mb-lg-0" id="breadcrumb2">
+						<ol class="breadcrumb mb-4 mb-lg-0 justify-content-center" id="breadcrumb2">
 							<li class="breadcrumb-item"><a href="#">Privacy Policy</a></li>
 							<li class="breadcrumb-item"><a href="#">Terms & Conditions</a></li>
 							<li class="breadcrumb-item"><a href="#">Information on Data Protection</a></li>
@@ -164,7 +562,20 @@
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/dist/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('body').css({'padding-bottom': ($('#notif-subscriber').height())});
+			$('#home-banner .carousel-control').css({'bottom': ($('#notif-subscriber').height() + 15)});
 
+			$(window).scroll(function() {
+				if ($(window).scrollTop()) {
+					$('#notif-subscriber').addClass('notif-dark');
+				} else {
+					$('#notif-subscriber').removeClass('notif-dark');
+				}
+			});
+		});
+	</script>
 	<!-- <script type="text/javascript">[].forEach.call(document.querySelectorAll("*"), function(a){a.style.outline="1px solid green";});</script> -->
 </body>
 </html>
