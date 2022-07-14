@@ -94,7 +94,8 @@ textarea:focus,
 	transition: .36s;
 }
 
-.btn-orange {
+.btn-orange,
+.badge-orange {
 	background-color: #fd4f00;
 	border-color: #fd4f00;
 	color: white;
@@ -118,6 +119,30 @@ textarea:focus,
 	background-color: #dadada !important;
 	border-color: #d3d3d3 !important;
 	color: #3a3a3a !important;
+}
+
+a .bi-chevron-down,
+button .bi-chevron-down
+.btn .bi-chevron-down {
+	display: none;
+}
+
+a .bi-chevron-up,
+button .bi-chevron-up,
+.btn .bi-chevron-up {
+	display: inline;
+}
+
+a.collapsed .bi-chevron-down,
+button.collapsed .bi-chevron-down,
+.btn.collapsed .bi-chevron-down {
+	display: inline;
+}
+
+a.collapsed .bi-chevron-up,
+button.collapsed .bi-chevron-up,
+.btn.collapsed .bi-chevron-up {
+	display: none;
 }
 
 
@@ -490,6 +515,8 @@ CAROUSEL
 
 .carousel-banner .carousel-title {
 	font-size: calc(3.5rem + 1.5vw)!important;
+	line-height: 1!important;
+	margin: 0;
 }
 
 .carousel-banner .carousel-lead {

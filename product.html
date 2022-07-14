@@ -264,7 +264,260 @@
 	</nav><!-- end of navbar -->
 
 	<main class="wrapper">
-		<section class="produk">
+		<section id="products-filter">
+			<div class="container">
+				<header class="d-lg-flex align-items-center justify-content-between">
+					<div class="mb-3">
+						<h4 class="gotham-bold">Coffee Collection</h4>
+						<div class="hasil-filter">
+							<button class="btn btn-sm btn-light mb-1">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light mb-1">Collection : Luwak Prestige <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light mb-1">Form : Beans <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light mb-1">Type : Arabica <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light mb-1">Packaging : Can <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light mb-1">Weight : 200g <i class="bi bi-x-circle"></i></button>
+						</div>
+					</div>
+					<a data-toggle="collapse" href="#procol1" class="text-dark collapsed" id="tombol-filter">
+						Filter | Sort by <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
+					</a>
+				</header>
+
+				<div class="collapse" id="procol1">
+					<div class="pt-3">
+						<div class="border border-secondary rounded">
+							<div class="container-fluid py-3">
+								<div class="row">
+									<div class="col-lg">
+										<div class="hasil-filter">
+											<button class="btn btn-sm btn-light mb-1">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light mb-1">Collection : Luwak Prestige <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light mb-1">Form : Beans <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light mb-1">Type : Arabica <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light mb-1">Packaging : Can <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light mb-1">Weight : 200g <i class="bi bi-x-circle"></i></button>
+										</div>
+										<hr class="d-lg-none">
+									</div>
+
+									<div class="col-lg-auto mb-4 mb-xl-0">
+										<div class="d-flex">
+											<button class="btn w-50 btn-light active px-5 mr-1">Reset</button>
+											<button class="btn w-50 btn-orange px-5 ml-1">Apply</button>
+										</div>
+									</div>
+								</div>
+
+								<hr class="d-none d-lg-block">
+
+								<div class="row justify-content-md-between justify-content-xl-around">
+									<div class="col-6 col-md-auto col-lg-auto">
+										<h6 class="gotham-bold mb-3">Collection</h6>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+												<label class="form-check-label" for="defaultCheck1">
+													Single Origin
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+												<label class="form-check-label" for="defaultCheck2">
+													Luwak Prestige
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+												<label class="form-check-label" for="defaultCheck3">
+													Organic
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+												<label class="form-check-label" for="defaultCheck4">
+													Rainforest
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+												<label class="form-check-label" for="defaultCheck5">
+													Gourmet
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+												<label class="form-check-label" for="defaultCheck6">
+													World Blend
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-6 col-md-auto col-lg-auto">
+										<h6 class="gotham-bold mb-3">Type</h6>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+												<label class="form-check-label" for="defaultCheck7">
+													Arabica
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+												<label class="form-check-label" for="defaultCheck8">
+													Robusta
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+												<label class="form-check-label" for="defaultCheck9">
+													blend
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-6 col-md-auto col-lg-auto">
+										<h6 class="gotham-bold mb-3">Form</h6>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+												<label class="form-check-label" for="defaultCheck10">
+													Beans
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+												<label class="form-check-label" for="defaultCheck11">
+													Ground
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+												<label class="form-check-label" for="defaultCheck12">
+													Drip
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+												<label class="form-check-label" for="defaultCheck13">
+													Capsules
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-6 col-md-auto col-lg-auto">
+										<h6 class="gotham-bold mb-3">Packaging</h6>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+												<label class="form-check-label" for="defaultCheck14">
+													Can
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+												<label class="form-check-label" for="defaultCheck15">
+													Pouch
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+												<label class="form-check-label" for="defaultCheck16">
+													Drip
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+												<label class="form-check-label" for="defaultCheck17">
+													Capsule
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+												<label class="form-check-label" for="defaultCheck18">
+													Box
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-6 col-md-auto col-lg-auto">
+										<h6 class="gotham-bold mb-3">Weight</h6>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+												<label class="form-check-label" for="defaultCheck19">
+													50g
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+												<label class="form-check-label" for="defaultCheck20">
+													600g
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+												<label class="form-check-label" for="defaultCheck21">
+													100g
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+												<label class="form-check-label" for="defaultCheck22">
+													200g
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+												<label class="form-check-label" for="defaultCheck23">
+													500g
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+												<label class="form-check-label" for="defaultCheck24">
+													1000g
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-auto border-right d-none d-lg-block"></div>
+
+									<div class="col-12 col-lg-auto">
+										<hr class="d-lg-none">
+										<h6 class="gotham-bold mb-3">Sortby</h6>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+												<label class="form-check-label" for="inlineRadio1">Latest Products</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+												<label class="form-check-label" for="inlineRadio2">Popular Products</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+												<label class="form-check-label" for="inlineRadio3">Highest Prices</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+												<label class="form-check-label" for="inlineRadio4">Lowes Prices</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="produk d-none">
 			<div class="container">
 				<div class="row baris-produk">
 					<div class="col col-6 col-md-4 col-xl-3 kolom-produk">
@@ -282,14 +535,14 @@
 			<div class="container py-5">
 				<ol class="breadcrumb mb-5 justify-content-center" id="breadcrumb1">
 					<li class="breadcrumb-item"><a href="index.html" id="footer-home">HOME</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-beans">BEANS</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-ground">GROUND</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-drip">DRIP</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-capsules">CAPSULES</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-membership">MEMBERSHIP</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-contact">CONTACT</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-brochure">BROCHURE</a></li>
-					<li class="breadcrumb-item"><a href="#" id="footer-news">NEWS & EVENTS</a></li>
+					<li class="breadcrumb-item"><a href="product.html" id="footer-beans">BEANS</a></li>
+					<li class="breadcrumb-item"><a href="product.html" id="footer-ground">GROUND</a></li>
+					<li class="breadcrumb-item"><a href="product.html" id="footer-drip">DRIP</a></li>
+					<li class="breadcrumb-item"><a href="product.html" id="footer-capsules">CAPSULES</a></li>
+					<li class="breadcrumb-item"><a href="membership.html" id="footer-membership">MEMBERSHIP</a></li>
+					<li class="breadcrumb-item"><a href="contact.html" id="footer-contact">CONTACT</a></li>
+					<li class="breadcrumb-item"><a href="brochure.html" id="footer-brochure">BROCHURE</a></li>
+					<li class="breadcrumb-item"><a href="news.html" id="footer-news">NEWS & EVENTS</a></li>
 				</ol>
 
 				<div id="footer-sosmed">
@@ -306,9 +559,9 @@
 				<div class="row">
 					<div class="col-lg-auto">
 						<ol class="breadcrumb mb-4 mb-lg-0 justify-content-center" id="breadcrumb2">
-							<li class="breadcrumb-item"><a href="#">Privacy Policy</a></li>
-							<li class="breadcrumb-item"><a href="#">Terms & Conditions</a></li>
-							<li class="breadcrumb-item"><a href="#">Information on Data Protection</a></li>
+							<li class="breadcrumb-item"><a href="pp.html">Privacy Policy</a></li>
+							<li class="breadcrumb-item"><a href="tnc.html">Terms & Conditions</a></li>
+							<li class="breadcrumb-item"><a href="idp.html">Information on Data Protection</a></li>
 						</ol>
 					</div>
 
@@ -317,13 +570,14 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer><!-- end of copyright -->
 
 	<div class="backdrop-no-scroll"></div>
 
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/dist/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/product.js"></script>
 	<script type="text/javascript">
 		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
 	</script>
