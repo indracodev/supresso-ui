@@ -1,0 +1,15 @@
+#modal-addtocart .input-group {
+	max-width: 150px;
+	margin-left: -.75rem;
+}
+
+#modal-addtocart .input-group .form-control {
+	border-left-width: 0;
+	border-top-width: 0;
+	border-right-width: 0;
+}
+
+#modal-addtocart .input-group .form-control,
+#modal-addtocart .input-group .btn {
+	font-size: 1.5em;
+}

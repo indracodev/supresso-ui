@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 	<title>SUPRESSO · Products</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/products.css">
 </head>
 
 <body id="products">
@@ -264,23 +266,31 @@
 	</nav><!-- end of navbar -->
 
 	<main class="wrapper">
-		<section id="products-filter">
+		<section id="products-filter" class="mb-5">
 			<div class="container">
-				<header class="d-lg-flex align-items-center justify-content-between">
-					<div class="mb-3">
-						<h4 class="gotham-bold">Coffee Collection</h4>
-						<div class="hasil-filter">
-							<button class="btn btn-sm btn-light mb-1">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
-							<button class="btn btn-sm btn-light mb-1">Collection : Luwak Prestige <i class="bi bi-x-circle"></i></button>
-							<button class="btn btn-sm btn-light mb-1">Form : Beans <i class="bi bi-x-circle"></i></button>
-							<button class="btn btn-sm btn-light mb-1">Type : Arabica <i class="bi bi-x-circle"></i></button>
-							<button class="btn btn-sm btn-light mb-1">Packaging : Can <i class="bi bi-x-circle"></i></button>
-							<button class="btn btn-sm btn-light mb-1">Weight : 200g <i class="bi bi-x-circle"></i></button>
+				<header>
+					<div class="row align-items-center">
+						<div class="col">
+							<h4 class="gotham-bold m-0">Coffee Collection</h4>
+						</div>
+						
+						<div class="col-12 hasil-filter order-lg-2">
+							<div class="pt-3">
+								<button class="btn btn-sm btn-light my-1">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
+								<button class="btn btn-sm btn-light my-1">Collection : Luwak Prestige <i class="bi bi-x-circle"></i></button>
+								<button class="btn btn-sm btn-light my-1">Form : Beans <i class="bi bi-x-circle"></i></button>
+								<button class="btn btn-sm btn-light my-1">Type : Arabica <i class="bi bi-x-circle"></i></button>
+								<button class="btn btn-sm btn-light my-1">Packaging : Can <i class="bi bi-x-circle"></i></button>
+								<button class="btn btn-sm btn-light my-1">Weight : 200g <i class="bi bi-x-circle"></i></button>
+							</div>
+						</div>
+
+						<div class="col-lg-auto pt-3 pt-lg-0">
+							<a data-toggle="collapse" href="#procol1" class="text-dark collapsed" id="tombol-filter">
+								Filter | Sort by <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
+							</a>
 						</div>
 					</div>
-					<a data-toggle="collapse" href="#procol1" class="text-dark collapsed" id="tombol-filter">
-						Filter | Sort by <i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i>
-					</a>
 				</header>
 
 				<div class="collapse" id="procol1">
@@ -290,12 +300,12 @@
 								<div class="row">
 									<div class="col-lg">
 										<div class="hasil-filter">
-											<button class="btn btn-sm btn-light mb-1">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
-											<button class="btn btn-sm btn-light mb-1">Collection : Luwak Prestige <i class="bi bi-x-circle"></i></button>
-											<button class="btn btn-sm btn-light mb-1">Form : Beans <i class="bi bi-x-circle"></i></button>
-											<button class="btn btn-sm btn-light mb-1">Type : Arabica <i class="bi bi-x-circle"></i></button>
-											<button class="btn btn-sm btn-light mb-1">Packaging : Can <i class="bi bi-x-circle"></i></button>
-											<button class="btn btn-sm btn-light mb-1">Weight : 200g <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light my-1">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light my-1">Collection : Luwak Prestige <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light my-1">Form : Beans <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light my-1">Type : Arabica <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light my-1">Packaging : Can <i class="bi bi-x-circle"></i></button>
+											<button class="btn btn-sm btn-light my-1">Weight : 200g <i class="bi bi-x-circle"></i></button>
 										</div>
 										<hr class="d-lg-none">
 									</div>
@@ -515,19 +525,123 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section><!-- end of form filter products -->
 
-		<section class="produk d-none">
+		<section class="produk">
 			<div class="container">
-				<div class="row baris-produk">
-					<div class="col col-6 col-md-4 col-xl-3 kolom-produk">
-						<div class="card card-produk">
-							
+				<div class="row baris-produk mr-0">
+					<div class="col col-6 col-md-4 col-xl-3 pr-0 kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0">
+							<div class="card-header overflow-hidden position-relative p-0 border-0">
+								<a href="#">
+									<img src="assets/img/produk.jpg" class="card-img">
+								</a>
+								<div class="promo">SAVE 15%</div>
+								<button class="btn btn-cart" data-toggle="modal" data-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text">
+									<del>$ 15.10</del>
+									<span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
 						</div>
-					</div>
+					</div><!-- end of produk item (kolom produk) -->
+
+					<div class="col col-6 col-md-4 col-xl-3 pr-0 kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 out-stock">
+							<div class="card-header overflow-hidden position-relative p-0 border-0">
+								<a href="#">
+									<img src="assets/img/produk.jpg" class="card-img">
+								</a>
+								<div class="promo">SAVE 15%</div>
+								<button class="btn btn-cart" data-toggle="modal" data-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text">
+									<del>$ 15.10</del>
+									<span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item (kolom produk) -->
+
+					<div class="col col-6 col-md-4 col-xl-3 pr-0 kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0">
+							<div class="card-header overflow-hidden position-relative p-0 border-0">
+								<a href="#">
+									<img src="assets/img/produk.jpg" class="card-img">
+								</a>
+								<div class="promo">SAVE 15%</div>
+								<button class="btn btn-cart" data-toggle="modal" data-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text">
+									<del>$ 15.10</del>
+									<span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item (kolom produk) -->
+
+					<div class="col col-6 col-md-4 col-xl-3 pr-0 kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0">
+							<div class="card-header overflow-hidden position-relative p-0 border-0">
+								<a href="#">
+									<img src="assets/img/produk.jpg" class="card-img">
+								</a>
+								<div class="promo">SAVE 15%</div>
+								<button class="btn btn-cart" data-toggle="modal" data-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text">
+									<del>$ 15.10</del>
+									<span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item (kolom produk) -->
+
+					<div class="col col-6 col-md-4 col-xl-3 pr-0 kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0">
+							<div class="card-header overflow-hidden position-relative p-0 border-0">
+								<a href="#">
+									<img src="assets/img/produk.jpg" class="card-img">
+								</a>
+								<div class="promo">SAVE 15%</div>
+								<button class="btn btn-cart" data-toggle="modal" data-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text">
+									<del>$ 15.10</del>
+									<span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item (kolom produk) -->
 				</div>
 			</div>
-		</section>
+		</section><!-- end of products list -->
 	</main><!-- end of wrapper -->
 
 	<footer id="copyright" class="text-center">
@@ -572,7 +686,70 @@
 		</div>
 	</footer><!-- end of copyright -->
 
-	<div class="backdrop-no-scroll"></div>
+	<div class="backdrop-no-scroll"></div><!-- end of backdrop when no-scroll active -->
+
+	<div class="modal fade" id="modal-addtocart" data-backdrop="static" tabindex="-1" aria-labelledby="modal-addtocartLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="ml-auto">
+						<button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+							<i class="bi bi-x-circle"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-4 mb-4 mb-lg-0">
+								<div class="card card-produk rounded-0 border-0">
+									<div class="card-header overflow-hidden position-relative p-0 border-0">
+										<a href="#">
+											<img src="assets/img/produk.jpg" class="card-img">
+										</a>
+										<div class="promo">SAVE 15%</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-8">
+								<h3 class="gotham-bold">Sumatra Mandheling Coffee Beans</h3>
+								<p class="text-justify">
+									20% Arabica - 80% Robusta. An 20/80 blend of Arabica and Robusta roasted with the City+ Roast mode and consisting of only Indonesian beans. Its lowest acidity amongst our Gourmet Collection and high bitterness characterise this blend, with sweet chocolaty aftertastes and woody, nuttiness in its undertones.
+								</p>
+								<div class="input-group my-4">
+									<div class="input-group-prepend">
+										<button class="btn">
+											<i class="bi bi-dash-circle"></i>
+										</button>
+									</div>
+									<input type="text" value="1" min="1" max="100" class="form-control text-center px-0 border-secondary">
+									<div class="input-group-append">
+										<button class="btn">
+											<i class="bi bi-plus-circle"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer py-4">
+					<div class="container-fluid d-lg-flex align-items-center justify-content-lg-between gotham-bold">
+						<h5>1 item added to your Cart</h5>
+						<h5>Subtotal $ 9.90</h5>
+					</div>
+				</div>
+
+				<div class="modal-footer flex-nowrap align-items-center py-4">
+					<button type="button" class="btn btn-block btn-secondary my-0" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-block btn-orange my-0">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- end modal when tombol filter press (pop up mini detail products) -->
 
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/dist/js/bootstrap.bundle.min.js"></script>

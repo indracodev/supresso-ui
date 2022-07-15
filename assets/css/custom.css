@@ -34,6 +34,16 @@ html.no-scroll {
 	background-color: black;
 }
 
+.text-orange {
+	color: #fd4f00;
+}
+
+body.modal-open,
+.modal-open .fixed-top,
+.modal-open .modal {
+	padding-right: unset!important;
+}
+
 @media (min-width: 992px) {
 	.border-lg-0 {
 		border-width: 0 !important;
@@ -609,4 +619,135 @@ NOTIFICATION BAR & BACKDROP
 .no-scroll .backdrop-no-scroll {
 	opacity: 1;
 	visibility: visible;
+}
+
+
+
+
+/*=================================================================
+CARD PRODUK
+=================================================================*/
+
+.wrapper .card-produk {
+	max-width: 210px;
+	flex-basis: 210px;
+	margin: auto;
+}
+
+.card-produk,
+.card-produk .card-header,
+.card-produk .card-img {
+	border-radius: 0;
+}
+
+.card-produk .promo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fd4f00;
+	color: white;
+	padding: .25rem .75rem;
+	line-height: 1.1;
+	font-size: .875em;
+}
+
+.card-produk .btn-cart {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 10%;
+	background-color: #656565;
+	color: white;
+	margin: 4%;
+	padding: .25rem;
+	line-height: 1;
+	font-size: 1.35em;
+	transition: .36s;
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+
+.card-produk .btn-cart i {
+	transform: scale(1.4);
+}
+
+.card-produk .card-title {
+	font-size: 1em;
+	font-family: 'Gotham Bold';
+}
+
+.card-produk del {
+	text-decoration-color: #fd4f00;
+}
+
+@media (min-width: 992px) {
+	.card-produk .btn-cart {
+		background-color: #a9a9a9;
+		transform: scale(.5);
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.card-produk .card-header:hover .btn-cart {
+		transform: scale(1.0);
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.card-produk .card-header .btn-cart:hover {
+		background-color: #656565;
+	}
+}
+
+@media (min-width: 1400px) {
+	.kolom-produk {
+		max-width: 20%;
+		flex-basis: 20%;
+	}
+}
+
+
+
+
+/*out of stock*/
+
+.card-produk.out-stock .card-header::before {
+	content: 'Out of Stock';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .875);
+	backdrop-filter: blur(2px);
+	color: #323232;
+	text-align: center;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Gotham Bold';
+	font-size: 1.25em;
+	opacity: 1;
+	visibility: visible;
+	transition: .36s;
+}
+
+@media (min-width: 992px) {
+	.card-produk.out-stock .card-header .btn-cart {
+		transform: scale(.5);
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.card-produk.out-stock .card-header::before {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.card-produk.out-stock .card-header:hover::before {
+		opacity: 1;
+		visibility: visible;
+	}
 }
