@@ -22,6 +22,10 @@ body {
     background-color: #323232 !important;
 }
 
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
 /* all about button */
 
 button:focus,
@@ -69,10 +73,24 @@ textarea:focus,
     color: #3a3a3a !important;
 }
 
+.btn.collapsed .bi-chevron-up,
+.btn .bi-chevron-down,
+a.collapsed .bi-chevron-up,
+a .bi-chevron-down {
+    display: none;
+}
+
+.btn .bi-chevron-up,
+.btn.collapsed .bi-chevron-down,
+a .bi-chevron-up,
+a.collapsed .bi-chevron-down {
+    display: inline;
+}
+
 /* struktur */
 
 .wrapper {
-    padding-top: 66px;
+    padding-top: 61px;
 }
 
 .wrapper section {
@@ -81,7 +99,7 @@ textarea:focus,
 
 @media (min-width: 992px) {
     .wrapper {
-        padding-top: 130px;
+        padding-top: 164px;
     }
 
     .wrapper section {
@@ -228,8 +246,12 @@ textarea:focus,
 /* produk */
 
 .wrapper .card-produk {
-    max-width: 210px;
-    flex-basis: 210px;
+    /*max-width: 210px;*/
+    /*flex-basis: 210px;*/
+}
+
+.card-produk .card-header {
+    background-color: #f1f2f2;
 }
 
 .card-produk .card-title {
@@ -237,12 +259,12 @@ textarea:focus,
     font-family: 'Gotham Bold';
 }
 
-.card-produk del {
+.harga-produk del {
     text-decoration-color: #fd4f00;
 }
 
 .card-produk .btn-cart {
-    background-color: #323232;
+    background-color: #b4b4b4;
     color: white;
     font-size: 1em;
     width: 35px;
@@ -255,7 +277,7 @@ textarea:focus,
 @media (min-width: 992px) {
     .card-produk .btn-cart {
         transition: .36s;
-        background-color: #656565;
+        background-color: #b4b4b4;
         opacity: 0;
         visibility: hidden;
         transform: scale(.5);
@@ -268,7 +290,7 @@ textarea:focus,
     }
 
     .card-produk .btn-cart:hover {
-        background-color: #323232;
+        background-color: #878787;
     }
 }
 
@@ -285,7 +307,8 @@ textarea:focus,
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(rgba(255, 255, 255, .75), white);
+    background-color: rgba(241, 242, 242, .875);
+    /*background-image: radial-gradient(rgba(255, 255, 255, .75), #f1f2f2);*/
     backdrop-filter: blur(2px);
     z-index: 100;
     display: flex;
@@ -308,4 +331,74 @@ textarea:focus,
 
 .modal.show.modal-center .modal-dialog {
     transform: translate(0, 0) scale(1);
+}
+
+/*all about form check*/
+
+.form-check label {
+    cursor: pointer;
+}
+
+.form-check .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #d1d2d2;
+    margin: 0;
+}
+
+.form-check input:checked ~ .checkmark {
+    background-color: #878787;
+}
+
+/*navbar*/
+
+.navbar {
+    padding: 0;
+    transition: .36s;
+    transform: none;
+}
+
+.navbar.scroll {
+    transform: translateY(calc(-100% + 1px));
+}
+
+/*navbar light*/
+
+.navbar-light {
+    background-color: white;
+}
+
+/*navbar brand*/
+
+.navbar-brand {
+    padding: .75rem 0;
+}
+
+.navbar-brand,
+.navbar-brand img {
+    transition: .36s;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        padding: 3rem 0;
+    }
+}
+
+/*navbar on scroll*/
+
+@media (min-width: 992px) {
+    .navbar.on-scroll .navbar-brand {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar.on-scroll .navbar-brand img {
+        width: 50px;
+    }
 }

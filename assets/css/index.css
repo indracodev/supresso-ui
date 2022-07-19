@@ -45,5 +45,15 @@
         padding-left: 0;
         padding-right: 0;
     }
+}
 
+@media (min-width: 992px) {
+    #tiles .card .card-img {
+        opacity: .9;
+        transition: .36s;
+    }
+
+    #tiles .card:hover .card-img {
+        opacity: 1;
+    }
 }

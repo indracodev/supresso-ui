@@ -2,344 +2,541 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPRESSO · Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SUPRESSO · Home</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/dist52/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/gotham.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="assets/dist52/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/gotham.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 
-    <link rel="stylesheet" href="assets/css/index.css">
+	<!-- <link rel="stylesheet" href="assets/css/product.css"> -->
 </head>
 
 <body>
 
-    <!-- navigation bar -->
+	<!-- navigation bar -->
+	<nav class="navbar navbar-light navbar-expand-lg d-block fixed-top">
+		<div class="container-fluid container-lg">
+			<a href="index.html" class="navbar-brand">
+				<img src="assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none">
+				<img src="assets/img/navbar/logo.png" width="80" height="auto" class="d-none d-lg-block">
+			</a>
 
-    <!-- end of navigation bar -->
+			<div class="navbar-corner ms-auto order-lg-2 ms-lg-4">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item d-none d-lg-block">
+						<a href="#" class="nav-link">SEARCH</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link px-2">PROFILE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link px-2">CART [8]</a>
+					</li>
+				</ul>
+			</div>
 
-    <!-- main wrapper -->
-    <main class="wrapper">
+			<button class="navbar-toggler ms-2 border-0" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-        <!-- produk filter -->
-        <section id="product-filter" class="mb-5">
-            <header>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <h3 class="gotham-bold">Coffee Collection</h3>
-                        </div>
-                        <div class="col-auto ms-auto">
-                            <a href="#" class="text-dark text-decoration-none">Filter | Sort By <i
-                                    class="bi bi-chevron-down"></i></a>
-                        </div>
-                        <div class="col col-12 my-3 my-lg-0">
-                            <div class="d-grid gap-1 d-flex flex-wrap">
-                                <button class="btn btn-sm btn-light">
-                                    Collection : Single Origin <i class="bi bi-x-circle"></i>
-                                </button>
-                                <button class="btn btn-sm btn-light">
-                                    Weight : 200g <i class="bi bi-x-circle"></i>
-                                </button>
-                                <button class="btn btn-sm btn-light">
-                                    Packaging : Can <i class="bi bi-x-circle"></i>
-                                </button>
-                                <button class="btn btn-sm btn-light">
-                                    Form : Beans <i class="bi bi-x-circle"></i>
-                                </button>
-                                <button class="btn btn-sm btn-light">
-                                    Type : Arabica <i class="bi bi-x-circle"></i>
-                                </button>
-                                <button class="btn btn-sm btn-light">
-                                    Collection : Balicafé <i class="bi bi-x-circle"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </section>
-        <!-- end of produk filter -->
+			<div class="collapse navbar-collapse" id="navcol1">
+				<ul class="navbar-nav ms-lg-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link">COFFEE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">MACHINES</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">EXPLORE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">PARTNERSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">CAFE</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">GALLERY</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- end of navtop -->
+	</nav><!-- end of navigation bar -->
 
-        <!-- daftar produk -->
-        <section>
-            <div class="container">
-                <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 baris-produk me-0">
+	<!-- main wrapper -->
+	<main class="wrapper">
 
-                    <!-- produk item -->
-                    <div class="col kolom-produk pe-0 mb-4">
-                        <div class="card card-produk rounded-0 border-0 mx-auto">
-                            <div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-                                <a data-bs-toggle="modal" href="#modal-addtocart">
-                                    <img src="assets/img/produk.jpg" class="card-img rounded-0">
-                                </a>
-                                <div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%
-                                </div>
-                                <button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
-                                    data-bs-toggle="modal" data-bs-target="#modal-addtocart">
-                                    <i class="bi bi-cart3"></i>
-                                </button>
-                            </div>
-                            <div class="card-body py-3 px-2 text-center">
-                                <h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
-                                <p class="card-text mb-2">200g</p>
-                                <p class="card-text">
-                                    <del>$ 15.10</del>
-                                    <span class="text-orange">$ 13.59</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- end of produk item -->
+		<!-- produk filter -->
+		<section id="product-filter" class="mb-5">
+			<form action="">
+				<div class="container">
+					<header class="d-flex align-items-center">
+						<h3 class="gotham-bold m-0">Coffee Collection</h3>
+						<a data-bs-toggle="collapse" href=".form-filter" class="text-dark text-decoration-none ms-auto collapsed">Filter | Sort by <i class="bi bi-chevron-up"></i><i class="bi bi-chevron-down"></i></a>
+					</header><!-- end of header title & menu filter -->
 
-                    <!-- produk item -->
-                    <div class="col kolom-produk pe-0 mb-4">
-                        <div class="card card-produk rounded-0 border-0 mx-auto out-stock">
-                            <div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-                                <a data-bs-toggle="modal" href="#modal-addtocart">
-                                    <img src="assets/img/produk.jpg" class="card-img rounded-0">
-                                </a>
-                                <div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%
-                                </div>
-                                <button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
-                                    data-bs-toggle="modal" data-bs-target="#modal-addtocart">
-                                    <i class="bi bi-cart3"></i>
-                                </button>
-                            </div>
-                            <div class="card-body py-3 px-2 text-center">
-                                <h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
-                                <p class="card-text mb-2">200g</p>
-                                <p class="card-text">
-                                    <del>$ 15.10</del>
-                                    <span class="text-orange">$ 13.59</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- end of produk item -->
+					<div class="collapse show form-filter">
+						<div class="d-grid gap-1 d-flex flex-wrap pt-3">
+							<button class="btn btn-sm btn-light">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light">Collection : Balicafé <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light">Type : Arabica <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light">Form : Beans <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light">Packaging : Can <i class="bi bi-x-circle"></i></button>
+							<button class="btn btn-sm btn-light">Weight : 200g <i class="bi bi-x-circle"></i></button>
+						</div>
+					</div><!-- end of hasil filter in mobile -->
 
-                    <!-- produk item -->
-                    <div class="col kolom-produk pe-0 mb-4">
-                        <div class="card card-produk rounded-0 border-0 mx-auto">
-                            <div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-                                <a data-bs-toggle="modal" href="#modal-addtocart">
-                                    <img src="assets/img/produk.jpg" class="card-img rounded-0">
-                                </a>
-                                <div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE
-                                    15%
-                                </div>
-                                <button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
-                                    data-bs-toggle="modal" data-bs-target="#modal-addtocart">
-                                    <i class="bi bi-cart3"></i>
-                                </button>
-                            </div>
-                            <div class="card-body py-3 px-2 text-center">
-                                <h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
-                                <p class="card-text mb-2">200g</p>
-                                <p class="card-text">
-                                    <del>$ 15.10</del>
-                                    <span class="text-orange">$ 13.59</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- end of produk item -->
+					<div class="collapse form-filter">
+						<div class="pt-3">
+							<div class="border border-secondary rounded p-3">
+								<header class="d-lg-flex justify-content-between align-items-start mb-4 mb-lg-0">
+									<div class="d-grid gap-1 d-flex flex-wrap">
+										<button class="btn btn-sm btn-light">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
+										<button class="btn btn-sm btn-light">Collection : Balicafé <i class="bi bi-x-circle"></i></button>
+										<button class="btn btn-sm btn-light">Type : Arabica <i class="bi bi-x-circle"></i></button>
+										<button class="btn btn-sm btn-light">Form : Beans <i class="bi bi-x-circle"></i></button>
+										<button class="btn btn-sm btn-light">Packaging : Can <i class="bi bi-x-circle"></i></button>
+										<button class="btn btn-sm btn-light">Weight : 200g <i class="bi bi-x-circle"></i></button>
+									</div><!-- end of hasil filter in desktop -->
 
-                    <!-- produk item -->
-                    <div class="col kolom-produk pe-0 mb-4">
-                        <div class="card card-produk rounded-0 border-0 mx-auto">
-                            <div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-                                <a data-bs-toggle="modal" href="#modal-addtocart">
-                                    <img src="assets/img/produk.jpg" class="card-img rounded-0">
-                                </a>
-                                <div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE
-                                    15%
-                                </div>
-                                <button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
-                                    data-bs-toggle="modal" data-bs-target="#modal-addtocart">
-                                    <i class="bi bi-cart3"></i>
-                                </button>
-                            </div>
-                            <div class="card-body py-3 px-2 text-center">
-                                <h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
-                                <p class="card-text mb-2">200g</p>
-                                <p class="card-text">
-                                    <del>$ 15.10</del>
-                                    <span class="text-orange">$ 13.59</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- end of produk item -->
+									<hr class="d-lg-none">
+									
+									<div class="d-grid gap-2 d-flex">
+										<button class="btn btn-block btn-light active px-5">Reset</button>
+										<button class="btn btn-block btn-orange px-5">Apply</button>
+									</div>
+								</header><!-- end header form filter -->
 
-                    <!-- produk item -->
-                    <div class="col kolom-produk pe-0 mb-4">
-                        <div class="card card-produk rounded-0 border-0 mx-auto">
-                            <div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-                                <a data-bs-toggle="modal" href="#modal-addtocart">
-                                    <img src="assets/img/produk.jpg" class="card-img rounded-0">
-                                </a>
-                                <div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE
-                                    15%
-                                </div>
-                                <button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
-                                    data-bs-toggle="modal" data-bs-target="#modal-addtocart">
-                                    <i class="bi bi-cart3"></i>
-                                </button>
-                            </div>
-                            <div class="card-body py-3 px-2 text-center">
-                                <h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
-                                <p class="card-text mb-2">200g</p>
-                                <p class="card-text">
-                                    <del>$ 15.10</del>
-                                    <span class="text-orange">$ 13.59</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- end of produk item -->
+								<hr class="d-none d-lg-block">
+								
+								<div class="container-fluid">
+									<div class="row justify-content-xl-around">
 
-                </div>
-            </div>
-        </section>
-        <!-- end of daftar produk -->
+										<!-- filter item -->
+										<div class="col-6 col-md-4 col-lg-3 col-xl-auto mb-4 mb-lg-0">
+											<h5 class="gotham-bold mb-3 text-inherit text-uppercase">Collection</h5>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxCollection1">
+												<label class="form-check-label" for="checkboxCollection1">Single Origin</label>
+												<label class="checkmark" for="checkboxCollection1"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxCollection2">
+												<label class="form-check-label" for="checkboxCollection2">Luwak Prestige</label>
+												<label class="checkmark" for="checkboxCollection2"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxCollection3">
+												<label class="form-check-label" for="checkboxCollection3">Organic</label>
+												<label class="checkmark" for="checkboxCollection3"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxCollection4">
+												<label class="form-check-label" for="checkboxCollection4">Rainforest</label>
+												<label class="checkmark" for="checkboxCollection4"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxCollection5">
+												<label class="form-check-label" for="checkboxCollection5">Gourmet</label>
+												<label class="checkmark" for="checkboxCollection5"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxCollection6">
+												<label class="form-check-label" for="checkboxCollection6">World Blend</label>
+												<label class="checkmark" for="checkboxCollection6"></label>
+											</div>
+										</div><!-- end of filter item -->
 
-    </main>
-    <!-- end of main wrapper -->
+										<!-- filter item -->
+										<div class="col-6 col-md-4 col-lg-3 col-xl-auto mb-4 mb-lg-0">
+											<h5 class="gotham-bold mb-3 text-inherit text-uppercase">Type</h5>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxType1">
+												<label class="form-check-label" for="checkboxType1">Arabica</label>
+												<label class="checkmark" for="checkboxType1"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxType2">
+												<label class="form-check-label" for="checkboxType2">Robusta</label>
+												<label class="checkmark" for="checkboxType2"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxType3">
+												<label class="form-check-label" for="checkboxType3">Blend</label>
+												<label class="checkmark" for="checkboxType3"></label>
+											</div>
+										</div><!-- end of filter item -->
 
-    <!-- footer copyright -->
-    <footer id="copyright" class="text-center">
-        <div class="border-top border-secondary">
-            <div class="container py-5">
-                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-5 justify-content-center">
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="index.html" id="footer-home"
-                                class="active">HOME</a>
-                        </li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="product.html" id="footer-beans">BEANS</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="product.html" id="footer-ground">GROUND</a>
-                        </li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="product.html" id="footer-drip">DRIP</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="product.html"
-                                id="footer-capsules">CAPSULES</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="membership.html"
-                                id="footer-membership">MEMBERSHIP</a>
-                        </li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="contact.html" id="footer-contact">CONTACT</a>
-                        </li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="brochure.html"
-                                id="footer-brochure">BROCHURE</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0"><a href="news.html" id="footer-news">NEWS & EVENTS</a>
-                        </li>
-                    </ol>
-                </nav>
-                <div id="footer-sosmed">
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                </div>
-            </div>
-        </div>
+										<!-- filter item -->
+										<div class="col-6 col-md-4 col-lg-3 col-xl-auto mb-4 mb-lg-0">
+											<h5 class="gotham-bold mb-3 text-inherit text-uppercase">Form</h5>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxForm1">
+												<label class="form-check-label" for="checkboxForm1">Beans</label>
+												<label class="checkmark" for="checkboxForm1"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxForm2">
+												<label class="form-check-label" for="checkboxForm2">Ground</label>
+												<label class="checkmark" for="checkboxForm2"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxForm3">
+												<label class="form-check-label" for="checkboxForm3">Drip</label>
+												<label class="checkmark" for="checkboxForm3"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxForm4">
+												<label class="form-check-label" for="checkboxForm4">Capsules</label>
+												<label class="checkmark" for="checkboxForm4"></label>
+											</div>
+										</div><!-- end of filter item -->
 
-        <div class="border-top">
-            <div class="container py-4">
-                <div class="row">
-                    <div class="col-lg-auto">
-                        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
-                            <ol class="breadcrumb mb-4 mb-lg-0 justify-content-center">
-                                <li class="breadcrumb-item my-1 my-lg-0"><a href="pp.html">Privacy Policy</a></li>
-                                <li class="breadcrumb-item my-1 my-lg-0"><a href="tnc.html">Terms & Conditions</a></li>
-                                <li class="breadcrumb-item my-1 my-lg-0"><a href="idp.html">Information on Data
-                                        Protection</a>
-                                </li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-lg-auto ms-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer copyright -->
+										<!-- filter item -->
+										<div class="col-6 col-md-4 col-lg-3 col-xl-auto mb-4 mb-lg-0">
+											<h5 class="gotham-bold mb-3 text-inherit text-uppercase">Packaging</h5>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxPackaging1">
+												<label class="form-check-label" for="checkboxPackaging1">Beans</label>
+												<label class="checkmark" for="checkboxPackaging1"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxPackaging2">
+												<label class="form-check-label" for="checkboxPackaging2">Ground</label>
+												<label class="checkmark" for="checkboxPackaging2"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxPackaging3">
+												<label class="form-check-label" for="checkboxPackaging3">Drip</label>
+												<label class="checkmark" for="checkboxPackaging3"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxPackaging4">
+												<label class="form-check-label" for="checkboxPackaging4">Capsules</label>
+												<label class="checkmark" for="checkboxPackaging4"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxPackaging5">
+												<label class="form-check-label" for="checkboxPackaging5">Capsules</label>
+												<label class="checkmark" for="checkboxPackaging5"></label>
+											</div>
+										</div><!-- end of filter item -->
 
-    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript">
-        // [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
-    </script>
+										<!-- filter item -->
+										<div class="col-6 col-md-4 col-lg-3 col-xl-auto mb-4 mb-lg-0">
+											<h5 class="gotham-bold mb-3 text-inherit text-uppercase">Weight</h5>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxWeight1">
+												<label class="form-check-label" for="checkboxWeight1">50g</label>
+												<label class="checkmark" for="checkboxWeight1"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxWeight2">
+												<label class="form-check-label" for="checkboxWeight2">60g</label>
+												<label class="checkmark" for="checkboxWeight2"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxWeight3">
+												<label class="form-check-label" for="checkboxWeight3">100g</label>
+												<label class="checkmark" for="checkboxWeight3"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxWeight4">
+												<label class="form-check-label" for="checkboxWeight4">200g</label>
+												<label class="checkmark" for="checkboxWeight4"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxWeight5">
+												<label class="form-check-label" for="checkboxWeight5">500g</label>
+												<label class="checkmark" for="checkboxWeight5"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="checkbox" value="" id="checkboxWeight6">
+												<label class="form-check-label" for="checkboxWeight6">1000g</label>
+												<label class="checkmark" for="checkboxWeight6"></label>
+											</div>
+										</div><!-- end of filter item -->
 
-    <!-- popup modal add to cart -->
-    <div class="modal fade modal-center" id="modal-addtocart" tabindex="-1" aria-labelledby="modal-addtocartLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pt-0">
-                    <div class="container-fluid">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 col-lg-4 mb-4 mb-lg-0">
-                                <div class="card card-produk rounded-0 border-0">
-                                    <div class="card-header overflow-hidden position-relative p-0 border-0">
-                                        <a data-bs-toggle="modal" href="#modal-addtocart">
-                                            <img src="assets/img/produk.jpg" class="card-img">
-                                        </a>
-                                        <div class="promo d-none">SAVE 15%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <h3 class="gotham-bold mb-4">Sumatra Mandheling Coffee Beans</h3>
-                                <p class="text-justify mb-4">
-                                    20% Arabica - 80% Robusta. An 20/80 blend of Arabica and Robusta roasted with the
-                                    City+ Roast mode and consisting of only Indonesian beans. Its lowest acidity amongst
-                                    our Gourmet Collection and high bitterness characterise this blend, with sweet
-                                    chocolaty aftertastes and woody, nuttiness in its undertones.
-                                </p>
-                                <a href="#"><u>More Details <i class="bi bi-chevron-right"></i></u></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer border-0 py-0">
-                    <div class="container-fluid">
-                        <div
-                            class="py-3 d-flex align-items-center justify-content-between gotham-bold border-top border-bottom border-secondary w-100">
-                            <h5 class="d-flex align-items-center" style="white-space: nowrap; margin-left: -.75rem;">
-                                <div class="input-group">
-                                    <button class="btn text-inherit">
-                                        <i class="bi bi-dash-circle"></i>
-                                    </button>
-                                    <input type="text" value="1" min="1" max="100"
-                                        class="form-control text-center p-0 border-start-0 border-top-0 border-end-0 border-secondary"
-                                        style="max-width: 50px; font-size: inherit;">
-                                    <button class="btn text-inherit">
-                                        <i class="bi bi-plus-circle"></i>
-                                    </button>
-                                </div>
-                                <span class="d-none d-lg-inline">item added to your Cart</span>
-                            </h5>
-                            <h5>Subtotal $ 9.90</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer py-3 border-0">
-                    <div class="container-fluid">
-                        <div class="d-grid gap-2 w-100 d-md-flex">
-                            <button type="button" class="btn btn-lg btn-block btn-secondary my-0"
-                                data-bs-dismiss="modal">Continue Shopping</button>
-                            <button type="button" class="btn btn-lg btn-block btn-orange my-0">Shopping Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of popup modal add to cart -->
+										<div class="col-12 border-top mb-4 d-xl-none"></div>
+										<div class="col-auto px-0 border-end d-none d-xl-block"></div>
+
+										<!-- filter item -->
+										<div class="col-12 col-xl-auto">
+											<h5 class="gotham-bold mb-3 text-inherit text-uppercase">Sort by</h5>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="radio" name="radioSortDefault" id="radioSort1">
+												<label class="form-check-label" for="radioSort1">Latest Products</label>
+												<label class="checkmark" for="radioSort1"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="radio" name="radioSortDefault" id="radioSort2">
+												<label class="form-check-label" for="radioSort2">Popular Products</label>
+												<label class="checkmark" for="radioSort2"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="radio" name="radioSortDefault" id="radioSort3">
+												<label class="form-check-label" for="radioSort3">Highest Prices</label>
+												<label class="checkmark" for="radioSort3"></label>
+											</div>
+											<div class="form-check position-relative">
+												<input class="form-check-input d-none" type="radio" name="radioSortDefault" id="radioSort4">
+												<label class="form-check-label" for="radioSort4">Lowest Prices</label>
+												<label class="checkmark" for="radioSort4"></label>
+											</div>
+										</div><!-- end of filter item -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form><!-- end of form -->
+		</section><!-- end of produk filter -->
+
+		<!-- daftar produk -->
+		<section>
+			<div class="container">
+				<div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 gx-lg-5 baris-produk">
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a data-bs-toggle="modal" href="#modal-addtocart">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a data-bs-toggle="modal" href="#modal-addtocart">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto out-stock">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a data-bs-toggle="modal" href="#modal-addtocart">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a data-bs-toggle="modal" href="#modal-addtocart">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a data-bs-toggle="modal" href="#modal-addtocart">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+				</div>
+			</div>
+		</section><!-- end of daftar produk -->
+
+	</main><!-- end of main wrapper -->
+
+	<!-- footer copyright -->
+	<footer id="copyright" class="text-center">
+		<div class="border-top border-secondary">
+			<div class="container py-5">
+				<nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+					<ol class="breadcrumb mb-5 justify-content-center">
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="index.html" id="footer-home" class="active">HOME</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-beans">BEANS</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-ground">GROUND</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-drip">DRIP</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-capsules">CAPSULES</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="membership.html" id="footer-membership">MEMBERSHIP</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="contact.html" id="footer-contact">CONTACT</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="brochure.html" id="footer-brochure">BROCHURE</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="news.html" id="footer-news">NEWS & EVENTS</a></li>
+					</ol>
+				</nav>
+				<div id="footer-sosmed">
+					<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="border-top">
+			<div class="container py-4">
+				<div class="row">
+					<div class="col-lg-auto">
+						<nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+							<ol class="breadcrumb mb-4 mb-lg-0 justify-content-center">
+								<li class="breadcrumb-item my-1 my-lg-0"><a href="pp.html">Privacy Policy</a></li>
+								<li class="breadcrumb-item my-1 my-lg-0"><a href="tnc.html">Terms & Conditions</a></li>
+								<li class="breadcrumb-item my-1 my-lg-0"><a href="idp.html">Information on Data Protection</a></li>
+							</ol>
+						</nav>
+					</div>
+					<div class="col-lg-auto ms-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span></div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- end footer copyright -->
+
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript">
+		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
+	</script>
+
+	<!-- popup modal add to cart -->
+	<form action="">
+		<div class="modal fade modal-center" id="modal-addtocart" tabindex="-1" aria-labelledby="modal-addtocartLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row justify-content-center">
+								<div class="col-lg-4 mb-4 mb-lg-0">
+									<div class="card card-produk rounded-0 border-0">
+										<div class="card-header overflow-hidden position-relative p-0 border-0">
+											<a data-bs-toggle="modal" href="#modal-addtocart">
+												<img src="assets/img/produk.jpg" class="card-img">
+											</a>
+											<div class="promo d-none">SAVE 15%</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<h3 class="gotham-bold">Sumatra Mandheling Coffee Beans</h3>
+									<p>200g</p>
+									<h5 class="harga-produk mb-4">
+										<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+									</h5>
+									<p class="text-justify mb-4">
+										20% Arabica - 80% Robusta. An 20/80 blend of Arabica and Robusta roasted with the
+										City+ Roast mode and consisting of only Indonesian beans. Its lowest acidity amongst
+										our Gourmet Collection and high bitterness characterise this blend, with sweet
+										chocolaty aftertastes and woody, nuttiness in its undertones.
+									</p>
+									<a href="#"><u>More Details<i class="bi bi-chevron-right"></i></u></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<div class="container-fluid">
+							<div class="row align-items-center gotham-bold mb-4" style="font-size: 1.25em;">
+								<div class="col-auto d-flex align-items-center white-space-nowrap">
+									<div class="input-group" style="margin-left: -.75rem;">
+										<button class="btn text-inherit border-0"><i class="bi bi-dash-circle"></i></button>
+										<input type="text" value="1" min="1" max="100" class="form-control text-inherit text-center border-start-0 border-top-0 border-end-0 rounded-0 px-0 border-secondary" style="max-width: 55px;">
+										<button class="btn text-inherit border-0"><i class="bi bi-plus-circle"></i></button>
+									</div>
+									<span class="d-none d-lg-inline">item added to your Cart</span>
+								</div>
+								<div class="col-auto ms-auto">
+									<span>Subtotal $ 9.90</span>
+								</div>
+							</div>
+							<div class="d-grid gap-2 d-md-flex">
+								<button type="button" class="btn btn-block btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+								<button type="button" class="btn btn-block btn-orange">Shopping Cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end of popup modal add to cart -->
+	</form><!-- end of form -->
 
 </body>
 
