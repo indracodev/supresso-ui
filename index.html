@@ -2,330 +2,461 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPRESSO · Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SUPRESSO · Home</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/dist52/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/gotham.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="assets/dist52/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/gotham.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 
-    <link rel="stylesheet" href="assets/css/index.css">
+	<!-- local styles -->
+	<style>
+		/*home banner*/
+
+		#home-banner .carousel-item:nth-of-type(1) {
+			background-image: url(assets/img/landingSG/m_assorted.jpg);
+		}
+
+		#home-banner .carousel-item:nth-of-type(2) {
+			background-image: url(assets/img/landingSG/m_exotic.jpg);
+		}
+
+		#home-banner .carousel-item:nth-of-type(3) {
+			background-image: url(assets/img/landingSG/m_lampung.jpg);
+		}
+
+		#home-banner .carousel-caption {
+			padding: 0;
+		}
+
+		@media (min-width: 992px) {
+			#home-banner .carousel-item:nth-of-type(1) {
+				background-image: url(assets/img/landingSG/d_assorted.jpg);
+			}
+
+			#home-banner .carousel-item:nth-of-type(2) {
+				background-image: url(assets/img/landingSG/d_exotic.jpg);
+			}
+
+			#home-banner .carousel-item:nth-of-type(3) {
+				background-image: url(assets/img/landingSG/d_lampung.jpg);
+			}
+		}
+
+		/*tiles*/
+
+		#tiles .container-fluid {
+			padding-top: calc(var(--bs-gutter-x) * .5);
+		}
+
+		#tiles .col {
+			margin-bottom: calc(var(--bs-gutter-x) * .5);
+		}
+
+		#tiles .card-img-overlay {
+			top: initial;
+		}
+
+		@media (max-width: 991.98px) {
+			#tiles .container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		@media (min-width: 992px) {
+			#tiles .card .card-img {
+				opacity: .9;
+				transition: .36s;
+			}
+
+			#tiles .card:hover .card-img {
+				opacity: 1;
+			}
+		}
+	</style><!-- end local styles -->
+
 </head>
 
 <body>
 
-    <!-- navigation bar --><!-- end of navigation bar -->
+	<header id="main-header" class="fixed-top">
 
-    <!-- main wrapper -->
-    <main class="wrapper pt-0">
-        <!-- home banner slider -->
-        <section class="mb-0">
-            <div id="home-banner" class="carousel slide carousel-banner" data-bs-ride="false">
-                <div class="carousel-control">
-                    <button class="carousel-control-prev position-relative w-100" type="button" data-bs-target="#home-banner" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <div class="carousel-indicators position-relative m-0">
-                        <div class="position-relative">
-                            <button type="button" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">01</button>
-                            <button type="button" data-bs-slide-to="1" aria-label="Slide 2">02</button>
-                            <button type="button" data-bs-slide-to="2" aria-label="Slide 3">03</button>
-                        </div>
-                        <span>/</span> <small>03</small>
-                    </div>
-                    <button class="carousel-control-next position-relative w-100" type="button" data-bs-target="#home-banner" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+		<!-- notifikasi bar -->
+		<div class="collapse show notifikasi" id="notifikasiNewsletter">
+			<div class="alert bg-dark text-white text-center rounded-0 m-0">
+				<a data-bs-toggle="offcanvas" href="#formNewsletter" class="text-white text-decoration-none d-inline">
+					<u>Hello. Get 10% OFF* | your first order when you subscribe to our newsletter! | Claim My 10% OFF <i class="bi bi-chevron-right"></i></u>
+				</a>
+			</div>
+		</div><!-- end notifikasi bar -->
 
-                <div class="carousel-inner">
+		<!-- navigation bar -->
+		<nav class="navbar navbar-expand-lg d-block">
+			<div class="container-fluid container-lg">
+				<a href="index.html" class="navbar-brand">
+					<img src="assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none">
+					<img src="assets/img/navbar/logo.png" width="80" height="auto" class="d-none d-lg-block">
+				</a>
 
-                    <div class="carousel-item active">
-                        <div class="carousel-caption text-start">
-                            <div class="container">
-                                <div class="row justify-content-center justify-content-lg-start">
-                                    <div class="col-11 col-lg-7">
-                                        <h1 class="carousel-title display-1 gotham-bold">20% OFF</h1>
-                                        <h3 class="carousel-lead gotham-thin">ASSORTED CAPSULES</h3>
-                                        <p class="carousel-text">Single Origin Collection | Gourmet Collection</p>
-                                        <a href="#" class="btn btn-orange px-4">SHOP NOW</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end of slider -->
+				<div class="navbar-corner ms-auto order-lg-2 ms-lg-4">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item d-none d-lg-block">
+							<a href="#" class="nav-link">SEARCH</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">PROFILE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">CART [8]</a>
+						</li>
+					</ul>
+				</div>
 
-                    <div class="carousel-item">
-                        <div class="carousel-caption text-start">
-                            <div class="container">
-                                <div class="row justify-content-center justify-content-lg-start">
-                                    <div class="col-11 col-lg-7">
-                                        <h1 class="carousel-title display-1 gotham-bold">30% OFF</h1>
-                                        <h3 class="carousel-lead gotham-thin">EXOTIC BAG 1KG</h3>
-                                        <a href="#" class="btn btn-orange px-4">SHOP NOW</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end of slider -->
+				<button class="navbar-toggler ms-2 border-0" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-                    <div class="carousel-item">
-                        <div class="carousel-caption text-start">
-                            <div class="container">
-                                <div class="row justify-content-center justify-content-lg-start">
-                                    <div class="col-11 col-lg-7">
-                                        <h1 class="carousel-title display-1 gotham-bold">20% OFF</h1>
-                                        <h3 class="carousel-lead gotham-thin">ALL GROUND COFFEE</h3>
-                                        <p class="carousel-text">Single Origin Collection</p>
-                                        <a href="#" class="btn btn-orange px-4">SHOP NOW</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div class="collapse navbar-collapse" id="navcol1">
+					<ul class="navbar-nav ms-lg-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">COFFEE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">MACHINES</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">EXPLORE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">PARTNERSHIP</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">CAFE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">GALLERY</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- end of navtop -->
+		</nav><!-- end of navigation bar -->
 
-                </div><!-- end of slider -->
-            </div>
-        </section>
-        <!-- end of home banner slider -->
+	</header><!-- end of main header -->
 
-        <!-- tiles -->
-        <section id="tiles">
-            <div class="container-fluid container-lg">
-                <div class="row me-0">
-                    <div class="col col-12 col-md-6 pe-0">
-                        <a href="#" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_balicafe.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay p-lg-5"></div>
-                            </div>
-                        </a>
-                    </div><!-- end of balicafe -->
+	<!-- main wrapper -->
+	<main class="wrapper pt-0">
+		<!-- home banner slider -->
+		<section class="mb-0">
+			<div id="home-banner" class="carousel carousel-light slide carousel-banner" data-bs-ride="false">
+				<div class="carousel-control">
+					<button class="carousel-control-prev position-relative w-100" type="button" data-bs-target="#home-banner" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<div class="carousel-indicators position-relative m-0">
+						<div class="position-relative">
+							<button type="button" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">01</button>
+							<button type="button" data-bs-slide-to="1" aria-label="Slide 2">02</button>
+							<button type="button" data-bs-slide-to="2" aria-label="Slide 3">03</button>
+						</div>
+						<span>/</span> <small>03</small>
+					</div>
+					<button class="carousel-control-next position-relative w-100" type="button" data-bs-target="#home-banner" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 
-                    <div class="col col-12 col-md-6 pe-0">
-                        <a href="#" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_maps.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay p-lg-5">
-                                    <h3 class="card-title"><small>OUR</small><br>Locations</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of explore maps -->
+				<div class="carousel-inner">
 
-                    <div class="col col-6 col-md-3 pe-0">
-                        <a href="product.html" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_beans.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay">
-                                    <p class="card-text">Beans Collection</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of beans collection -->
+					<div class="carousel-item active">
+						<div class="carousel-caption text-start">
+							<div class="container">
+								<div class="row justify-content-center justify-content-lg-start">
+									<div class="col-11 col-lg-7">
+										<h1 class="carousel-title display-1 gotham-bold">20% OFF</h1>
+										<h3 class="carousel-lead gotham-thin">ASSORTED CAPSULES</h3>
+										<p class="carousel-text">Single Origin Collection | Gourmet Collection</p>
+										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of slider -->
 
-                    <div class="col col-6 col-md-3 pe-0">
-                        <a href="product.html" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_ground.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay">
-                                    <p class="card-text">Ground Collection</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of ground collection -->
+					<div class="carousel-item">
+						<div class="carousel-caption text-start">
+							<div class="container">
+								<div class="row justify-content-center justify-content-lg-start">
+									<div class="col-11 col-lg-7">
+										<h1 class="carousel-title display-1 gotham-bold">30% OFF</h1>
+										<h3 class="carousel-lead gotham-thin">EXOTIC BAG 1KG</h3>
+										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of slider -->
 
-                    <div class="col col-6 col-md-3 pe-0">
-                        <a href="product.html" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_drip.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay">
-                                    <p class="card-text">Beans Drip</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of drip collection -->
+					<div class="carousel-item">
+						<div class="carousel-caption text-start">
+							<div class="container">
+								<div class="row justify-content-center justify-content-lg-start">
+									<div class="col-11 col-lg-7">
+										<h1 class="carousel-title display-1 gotham-bold">20% OFF</h1>
+										<h3 class="carousel-lead gotham-thin">ALL GROUND COFFEE</h3>
+										<p class="carousel-text">Single Origin Collection</p>
+										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="col col-6 col-md-3 pe-0">
-                        <a href="product.html" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_capsules.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay">
-                                    <p class="card-text">Capsules Collection</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of capsules collection -->
+				</div><!-- end of slider -->
+			</div>
+		</section>
+		<!-- end of home banner slider -->
 
-                    <div class="col col-12 col-md-6 pe-0">
-                        <a href="#" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_fb.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay p-lg-5">
-                                    <h3 class="card-title"><small>Our</small><br>Facebook</h3>
-                                    <a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE
-                                    INFO</small></a>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of sosmed slider -->
+		<!-- tiles -->
+		<section id="tiles">
+			<div class="container-fluid container-lg">
+				<div class="row me-0">
+					<div class="col col-12 col-md-6 pe-0">
+						<a href="#" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_balicafe.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay p-lg-5"></div>
+							</div>
+						</a>
+					</div><!-- end of balicafe -->
 
-                    <div class="col col-12 col-md-6 pe-0">
-                        <a href="#" class="text-decoration-none text-white">
-                            <div class="card border-0 rounded-0">
-                                <img src="assets/img/home/home_gallery.jpg" class="card-img rounded-0" alt="">
-                                <div class="card-img-overlay p-lg-5">
-                                    <h3 class="card-title"><small>Our</small><br>Gallery</h3>
-                                    <a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE
-                                    INFO</small></a>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!-- end of gallery slider -->
+					<div class="col col-12 col-md-6 pe-0">
+						<a href="#" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_maps.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay p-lg-5">
+									<h3 class="card-title"><small>OUR</small><br>Locations</h3>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of explore maps -->
 
-                </div>
-            </div>
-        </section>
-        <!-- end of tiles -->
+					<div class="col col-6 col-md-3 pe-0">
+						<a href="product.html" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_beans.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay">
+									<p class="card-text">Beans Collection</p>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of beans collection -->
 
-    </main>
-    <!-- end of main wrapper -->
+					<div class="col col-6 col-md-3 pe-0">
+						<a href="product.html" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_ground.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay">
+									<p class="card-text">Ground Collection</p>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of ground collection -->
 
-    <!-- footer copyright -->
-    <footer id="copyright" class="text-center">
-        <div class="border-top border-secondary">
-            <div class="container py-5">
-                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-5 justify-content-center">
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="index.html" id="footer-home" class="active">HOME</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-beans">BEANS</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-ground">GROUND</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-drip">DRIP</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-capsules">CAPSULES</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="membership.html" id="footer-membership">MEMBERSHIP</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="contact.html" id="footer-contact">CONTACT</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="brochure.html" id="footer-brochure">BROCHURE</a></li>
-                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="news.html" id="footer-news">NEWS & EVENTS</a></li>
-                    </ol>
-                </nav>
-                <div id="footer-sosmed">
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                </div>
-            </div>
-        </div>
+					<div class="col col-6 col-md-3 pe-0">
+						<a href="product.html" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_drip.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay">
+									<p class="card-text">Beans Drip</p>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of drip collection -->
 
-        <div class="border-top">
-            <div class="container py-4">
-                <div class="row">
-                    <div class="col-lg-auto">
-                        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
-                            <ol class="breadcrumb mb-4 mb-lg-0 justify-content-center">
-                                <li class="breadcrumb-item my-1 my-lg-0"><a href="pp.html">Privacy Policy</a></li>
-                                <li class="breadcrumb-item my-1 my-lg-0"><a href="tnc.html">Terms & Conditions</a></li>
-                                <li class="breadcrumb-item my-1 my-lg-0"><a href="idp.html">Information on Data Protection</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-lg-auto ms-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span></div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer copyright -->
+					<div class="col col-6 col-md-3 pe-0">
+						<a href="product.html" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_capsules.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay">
+									<p class="card-text">Capsules Collection</p>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of capsules collection -->
 
-    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript">
-        // [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
-    </script>
+					<div class="col col-12 col-md-6 pe-0">
+						<a href="#" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_fb.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay p-lg-5">
+									<h3 class="card-title"><small>Our</small><br>Facebook</h3>
+									<a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE
+									INFO</small></a>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of sosmed slider -->
 
-    <!-- notifikasi promo -->
-    <div id="notifikasiNewsletter" class="offcanvas offcanvas-top bg-dark h-auto show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" style="bottom: unset;">
-        <div class="offcanvas-body overflow-visible text-center">
-            <div class="container-fluid">
-                <a data-bs-toggle="offcanvas" href="#formNewsletter" class="text-white text-decoration-none">
-                    Hello. Get 10% OFF* | your first order when you subscribe to our newsletter! | Claim My 10% OFF <i class="bi bi-chevron-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- end notifikasi promo -->
+					<div class="col col-12 col-md-6 pe-0">
+						<a href="#" class="text-decoration-none text-white">
+							<div class="card border-0 rounded-0">
+								<img src="assets/img/home/home_gallery.jpg" class="card-img rounded-0" alt="">
+								<div class="card-img-overlay p-lg-5">
+									<h3 class="card-title"><small>Our</small><br>Gallery</h3>
+									<a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE
+									INFO</small></a>
+								</div>
+							</div>
+						</a>
+					</div><!-- end of gallery slider -->
 
-    <!-- form newsletter -->
-    <div id="formNewsletter" class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false">
-        <div class="offcanvas-header pb-0">
-            <button class="btn-close ms-auto" data-bs-toggle="offcanvas" data-bs-target="#notifikasiNewsletter"></button>
-        </div>
-        <div class="offcanvas-body pt-0">
-            <div class="container-fluid">
-                <h1 class="gotham-bold">Hello. <br>Get 10% OFF*</h1>
-                <p class="mb-4">Your first order when you subscribe to our newsletter!</p>
-                <form action="" class="mb-5">
-                    <div class="form-floating border-bottom mb-3">
-                        <input type="email" class="form-control rounded-0 border-0 px-0" id="formEmail1" placeholder="Email Address*" onmouseover="this.select()">
-                        <label for="formEmail1" class="px-0">Email Address*</label>
-                    </div>
-                    <div class="form-floating border-bottom mb-3">
-                        <input type="text" class="form-control rounded-0 border-0 px-0" id="formText1" placeholder="First Name*" onmouseover="this.select()">
-                        <label for="formText1" class="px-0">First Name*</label>
-                    </div>
-                    <div class="form-floating border-bottom mb-3">
-                        <input type="text" class="form-control rounded-0 border-0 px-0" id="formText2" placeholder="Last Name" onmouseover="this.select()">
-                        <label for="formText2" class="px-0">First Name</label>
-                    </div>
-                    <div class="form-floating border-bottom mb-3">
-                        <input type="password" class="form-control rounded-0 border-0 px-0" id="formPassword1" placeholder="Password*" onmouseover="this.select()">
-                        <label for="formPassword1" class="px-0">Password*</label>
-                    </div>
-                    <div class="form-floating border-bottom mb-3">
-                        <input type="password" class="form-control rounded-0 border-0 px-0" id="formCompass1" placeholder="Confirmation Password*" onmouseover="this.select()">
-                        <label for="formCompass1" class="px-0">Confirmation Password*</label>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-orange">CLAIM MY 10% OFF</button>
-                    </div>
-                </form>
-                <p class="small">
-                    Subscribe to receive communications from Supresso about our products and services. By subscribing, you agree to Supresso’s <a href="#" target="_blank" class="text-orange">Privacy Policy</a> and <a href="#" target="_blank" class="text-orange">Terms & Conditions</a>.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- end form newsletter -->
+				</div>
+			</div>
+		</section>
+		<!-- end of tiles -->
 
-    <!-- notifikasi cache -->
-    <div class="offcanvas offcanvas-bottom bg-orange text-white h-auto show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1">
-        <div class="offcanvas-body overflow-visible">
-            <div class="container-fluid">
-                <div class="row justify-content-lg-between">
-                    <div class="col-lg mb-3 mb-lg-0">
-                        <span>
-                            This website uses cookies to improve functionality and performance. Using cookies should
-                            enable the user to use certain functions, share on social networks and edit messages and
-                            advertisements. By clicking on the “ACCEPT” button, you agree to the use of cookies on this
-                            website. For additional information, please see our <i class="bi bi-arrow-right"></i> <a
-                            href="#" class="mx-4 text-white"><u>Privacy Policy</u></a>
-                        </span>
-                    </div>
-                    <div class="col-lg-auto">
-                        <button class="btn btn-light px-4" data-bs-dismiss="offcanvas">ACCEPT</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end notifikasi cache -->
+	</main>
+	<!-- end of main wrapper -->
+
+	<!-- footer copyright -->
+	<footer id="copyright" class="text-center">
+		<div class="border-top border-secondary">
+			<div class="container py-5">
+				<nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+					<ol class="breadcrumb mb-5 justify-content-center">
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="index.html" id="footer-home" class="active">HOME</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-beans">BEANS</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-ground">GROUND</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-drip">DRIP</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html" id="footer-capsules">CAPSULES</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="membership.html" id="footer-membership">MEMBERSHIP</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="contact.html" id="footer-contact">CONTACT</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="brochure.html" id="footer-brochure">BROCHURE</a></li>
+						<li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="news.html" id="footer-news">NEWS & EVENTS</a></li>
+					</ol>
+				</nav>
+				<div id="footer-sosmed">
+					<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="border-top">
+			<div class="container py-4">
+				<div class="row">
+					<div class="col-lg-auto">
+						<nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+							<ol class="breadcrumb mb-4 mb-lg-0 justify-content-center">
+								<li class="breadcrumb-item my-1 my-lg-0"><a href="pp.html">Privacy Policy</a></li>
+								<li class="breadcrumb-item my-1 my-lg-0"><a href="tnc.html">Terms & Conditions</a></li>
+								<li class="breadcrumb-item my-1 my-lg-0"><a href="idp.html">Information on Data Protection</a></li>
+							</ol>
+						</nav>
+					</div>
+					<div class="col-lg-auto ms-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer copyright -->
+
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	<!-- form newsletter -->
+	<div id="formNewsletter" class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false">
+		<div class="offcanvas-header pb-0">
+			<button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body pt-0">
+			<div class="container-fluid">
+				<h1 class="gotham-bold">Hello. <br>Get 10% OFF*</h1>
+				<p class="mb-4">Your first order when you subscribe to our newsletter!</p>
+				<form action="" class="mb-5">
+					<div class="form-floating border-bottom mb-3">
+						<input type="email" class="form-control rounded-0 border-0 px-0" id="formEmail1" placeholder="Email Address*" onmouseover="this.select()">
+						<label for="formEmail1" class="px-0">Email Address*</label>
+					</div>
+					<div class="form-floating border-bottom mb-3">
+						<input type="text" class="form-control rounded-0 border-0 px-0" id="formText1" placeholder="First Name*" onmouseover="this.select()">
+						<label for="formText1" class="px-0">First Name*</label>
+					</div>
+					<div class="form-floating border-bottom mb-3">
+						<input type="text" class="form-control rounded-0 border-0 px-0" id="formText2" placeholder="Last Name" onmouseover="this.select()">
+						<label for="formText2" class="px-0">First Name</label>
+					</div>
+					<div class="form-floating border-bottom mb-3">
+						<input type="password" class="form-control rounded-0 border-0 px-0" id="formPassword1" placeholder="Password*" onmouseover="this.select()">
+						<label for="formPassword1" class="px-0">Password*</label>
+					</div>
+					<div class="form-floating border-bottom mb-5">
+						<input type="password" class="form-control rounded-0 border-0 px-0" id="formCompass1" placeholder="Confirmation Password*" onmouseover="this.select()">
+						<label for="formCompass1" class="px-0">Confirmation Password*</label>
+					</div>
+					<div class="d-grid">
+						<button class="btn btn-orange">CLAIM MY 10% OFF</button>
+					</div>
+				</form>
+				<p class="small">
+					Subscribe to receive communications from Supresso about our products and services. By subscribing, you agree to Supresso’s <a href="#" target="_blank" class="text-orange">Privacy Policy</a> and <a href="#" target="_blank" class="text-orange">Terms & Conditions</a>.
+				</p>
+			</div>
+		</div>
+	</div><!-- end form newsletter -->
+
+	<!-- notifikasi cache -->
+	<div class="collapse show fixed-bottom" id="cookiealert" style="z-index: 2000;">
+		<div class="alert bg-orange text-white rounded-0 m-0">
+			<div class="container-fluid">
+				<div class="row justify-content-lg-between">
+					<div class="col-lg mb-3 mb-lg-0">
+						<span>
+							This website uses cookies to improve functionality and performance. Using cookies should
+							enable the user to use certain functions, share on social networks and edit messages and
+							advertisements. By clicking on the “ACCEPT” button, you agree to the use of cookies on this
+							website. For additional information, please see our <i class="bi bi-arrow-right"></i> <a
+							href="#" class="mx-4 text-white"><u>Privacy Policy</u></a>
+						</span>
+					</div>
+					<div class="col-lg-auto">
+						<button class="btn btn-light px-4" data-bs-toggle="collapse" data-bs-target="#cookiealert">ACCEPT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end notifikasi cache -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#home-banner .carousel-caption').css({ 'padding-top': ($('#notifikasiNewsletter').height()) });
+
+			$('#notifikasiNewsletter a').click(function() {
+				$('#home-banner .carousel-caption').css('padding-top', '0');
+				$('#notifikasiNewsletter').collapse('hide');
+			});
+
+			$('#formNewsletter .btn-close').click(function() {
+				$('#home-banner .carousel-caption').css({ 'padding-top': ($('#notifikasiNewsletter').height()) });
+				$('#notifikasiNewsletter').collapse('show');
+			});
+
+		});
+
+		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
+	</script>
 
 </body>
 

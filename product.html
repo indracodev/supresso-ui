@@ -13,62 +13,62 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/gotham.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
-
-	<!-- <link rel="stylesheet" href="assets/css/product.css"> -->
 </head>
 
 <body>
 
-	<!-- navigation bar -->
-	<nav class="navbar navbar-light navbar-expand-lg d-block fixed-top">
-		<div class="container-fluid container-lg">
-			<a href="index.html" class="navbar-brand">
-				<img src="assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none">
-				<img src="assets/img/navbar/logo.png" width="80" height="auto" class="d-none d-lg-block">
-			</a>
+	<header id="main-header" class="fixed-top">
+		<!-- navigation bar -->
+		<nav class="navbar navbar-expand-lg d-block">
+			<div class="container-fluid container-lg">
+				<a href="index.html" class="navbar-brand">
+					<img src="assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none">
+					<img src="assets/img/navbar/logo.png" width="80" height="auto" class="d-none d-lg-block">
+				</a>
 
-			<div class="navbar-corner ms-auto order-lg-2 ms-lg-4">
-				<ul class="navbar-nav flex-row">
-					<li class="nav-item d-none d-lg-block">
-						<a href="#" class="nav-link">SEARCH</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2">PROFILE</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2">CART [8]</a>
-					</li>
-				</ul>
-			</div>
+				<div class="navbar-corner ms-auto order-lg-2 ms-lg-4">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item d-none d-lg-block">
+							<a href="#" class="nav-link">SEARCH</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">PROFILE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">CART [8]</a>
+						</li>
+					</ul>
+				</div>
 
-			<button class="navbar-toggler ms-2 border-0" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+				<button class="navbar-toggler ms-2 border-0" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navcol1">
-				<ul class="navbar-nav ms-lg-auto">
-					<li class="nav-item">
-						<a href="#" class="nav-link">COFFEE</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">MACHINES</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">EXPLORE</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">PARTNERSHIP</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">CAFE</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">GALLERY</a>
-					</li>
-				</ul>
-			</div>
-		</div><!-- end of navtop -->
-	</nav><!-- end of navigation bar -->
+				<div class="collapse navbar-collapse" id="navcol1">
+					<ul class="navbar-nav ms-lg-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">COFFEE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">MACHINES</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">EXPLORE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">PARTNERSHIP</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">CAFE</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">GALLERY</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- end of navtop -->
+		</nav><!-- end of navigation bar -->
+	</header><!-- end of main header -->
 
 	<!-- main wrapper -->
 	<main class="wrapper">
@@ -82,7 +82,7 @@
 						<a data-bs-toggle="collapse" href=".form-filter" class="text-dark text-decoration-none ms-auto collapsed">Filter | Sort by <i class="bi bi-chevron-up"></i><i class="bi bi-chevron-down"></i></a>
 					</header><!-- end of header title & menu filter -->
 
-					<div class="collapse show form-filter">
+					<div class="collapse show form-filter d-none">
 						<div class="d-grid gap-1 d-flex flex-wrap pt-3">
 							<button class="btn btn-sm btn-light">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
 							<button class="btn btn-sm btn-light">Collection : Balicafé <i class="bi bi-x-circle"></i></button>
@@ -310,10 +310,10 @@
 					<div class="col kolom-produk mb-4">
 						<div class="card card-produk rounded-0 border-0 mx-auto">
 							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-								<a data-bs-toggle="modal" href="#modal-addtocart">
+								<a href="detail.html">
 									<img src="assets/img/produk.jpg" class="card-img rounded-0">
 								</a>
-								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
 								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
 									<i class="bi bi-cart3"></i>
 								</button>
@@ -332,10 +332,10 @@
 					<div class="col kolom-produk mb-4">
 						<div class="card card-produk rounded-0 border-0 mx-auto">
 							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-								<a data-bs-toggle="modal" href="#modal-addtocart">
+								<a href="detail.html">
 									<img src="assets/img/produk.jpg" class="card-img rounded-0">
 								</a>
-								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
 								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
 									<i class="bi bi-cart3"></i>
 								</button>
@@ -354,7 +354,7 @@
 					<div class="col kolom-produk mb-4">
 						<div class="card card-produk rounded-0 border-0 mx-auto out-stock">
 							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-								<a data-bs-toggle="modal" href="#modal-addtocart">
+								<a href="detail.html">
 									<img src="assets/img/produk.jpg" class="card-img rounded-0">
 								</a>
 								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
@@ -376,7 +376,51 @@
 					<div class="col kolom-produk mb-4">
 						<div class="card card-produk rounded-0 border-0 mx-auto">
 							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-								<a data-bs-toggle="modal" href="#modal-addtocart">
+								<a href="detail.html">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a href="detail.html">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto out-stock">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a href="detail.html">
 									<img src="assets/img/produk.jpg" class="card-img rounded-0">
 								</a>
 								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">SAVE 15%</div>
@@ -398,7 +442,73 @@
 					<div class="col kolom-produk mb-4">
 						<div class="card card-produk rounded-0 border-0 mx-auto">
 							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
-								<a data-bs-toggle="modal" href="#modal-addtocart">
+								<a href="detail.html">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a href="detail.html">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a href="detail.html">
+									<img src="assets/img/produk.jpg" class="card-img rounded-0">
+								</a>
+								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
+								<button class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+									<i class="bi bi-cart3"></i>
+								</button>
+							</div>
+							<div class="card-body py-3 px-2 text-center">
+								<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+								<p class="card-text mb-2">200g</p>
+								<p class="card-text harga-produk">
+									<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- end of produk item -->
+
+					<!-- produk item -->
+					<div class="col kolom-produk mb-4">
+						<div class="card card-produk rounded-0 border-0 mx-auto">
+							<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+								<a href="detail.html">
 									<img src="assets/img/produk.jpg" class="card-img rounded-0">
 								</a>
 								<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3 d-none">SAVE 15%</div>
@@ -469,9 +579,6 @@
 	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
-	<script type="text/javascript">
-		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
-	</script>
 
 	<!-- popup modal add to cart -->
 	<form action="">
@@ -487,7 +594,7 @@
 								<div class="col-lg-4 mb-4 mb-lg-0">
 									<div class="card card-produk rounded-0 border-0">
 										<div class="card-header overflow-hidden position-relative p-0 border-0">
-											<a data-bs-toggle="modal" href="#modal-addtocart">
+											<a href="detail.html">
 												<img src="assets/img/produk.jpg" class="card-img">
 											</a>
 											<div class="promo d-none">SAVE 15%</div>
@@ -537,6 +644,10 @@
 			</div>
 		</div><!-- end of popup modal add to cart -->
 	</form><!-- end of form -->
+
+	<script type="text/javascript">
+		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
+	</script>
 
 </body>
 

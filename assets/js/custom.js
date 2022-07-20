@@ -9,13 +9,25 @@ $(document).ready(function () {
         }
     });
 
+    
+
     // wrapper
     $('main.wrapper').css({ 'min-height': ($(window).height() - $('#copyright').height()) });
+
+    
 
     // carousel banner
     $('.carousel-banner .carousel-item').height($(window).height());
 
+    
+
     // all about navbar
+    if ($('.carousel').hasClass('carousel-light')) {
+        $('.navbar').addClass('navbar-dark');
+    } else {
+        $('.navbar').addClass('navbar-light');
+    }
+
     $(window).scroll(function() {
         if ($(window).scrollTop()) {
             $('.navbar').addClass('on-scroll');
