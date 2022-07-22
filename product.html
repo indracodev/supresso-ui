@@ -29,44 +29,247 @@
 				<div class="navbar-corner ms-auto order-lg-2 ms-lg-4">
 					<ul class="navbar-nav flex-row">
 						<li class="nav-item d-none d-lg-block">
-							<a href="#" class="nav-link">SEARCH</a>
+							<a href="#" class="nav-link"><span>SEARCH</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">PROFILE</a>
+							<a href="#" class="nav-link"><span>PROFILE</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">CART [8]</a>
+							<a href="#" class="nav-link"><span>CART [8]</span></a>
 						</li>
 					</ul>
 				</div>
 
-				<button class="navbar-toggler ms-2 border-0" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler ms-2 border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
+					<i class="bi bi-list"></i>
+					<i class="bi bi-x"></i>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navcol1">
-					<ul class="navbar-nav ms-lg-auto">
+					<form action="" class="d-lg-none">
+						<div class="input-group border-secondary">
+							<button class="btn"><i class="bi bi-search"></i></button>
+							<input type="search" placeholder="Search" class="form-control rounded-0 bg-transparent border-0">
+						</div>
+					</form>
+					<ul class="navbar-nav ms-lg-auto py-4 py-lg-0">
 						<li class="nav-item">
-							<a href="#" class="nav-link">COFFEE</a>
+							<a href="#" class="nav-link" id="nav-coffee"><span>COFFEE</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">MACHINES</a>
+							<a href="#" class="nav-link" id="nav-machines"><span>MACHINES</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">EXPLORE</a>
+							<a href="#" class="nav-link" id="nav-explore"><span>EXPLORE</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">PARTNERSHIP</a>
+							<a href="#" class="nav-link" id="nav-partnership"><span>PARTNERSHIP</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">CAFE</a>
+							<a href="#" class="nav-link" id="nav-cafe"><span>CAFE</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">GALLERY</a>
+							<a href="#" class="nav-link" id="nav-gallery"><span>GALLERY</span></a>
 						</li>
 					</ul>
 				</div>
 			</div><!-- end of navtop -->
+
+			<div class="collapse" id="navcol2">
+				<div class="inner-navcol2">
+					<div class="container-fluid container-lg d-block py-lg-5">
+						<div class="row align-items-lg-end">
+							<!-- navbar menu -->
+							<div class="col col-lg-auto d-lg-none" id="navbar-coffee">
+								<header>
+									<div class="container-fluid px-lg-0">
+										<button class="btn d-lg-none btn-back border-0">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0">
+											<span class="gotham-bold">COFFEE</span>
+										</div>
+									</div>
+								</header>
+								<div class="container-fluid px-lg-0">
+									<ul class="navbar-nav flex-column pt-4 pt-lg-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0" id="nav-beans"><span>BEANS</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0" id="nav-ground"><span>GROUND</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0" id="nav-drip"><span>DRIP</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0" id="nav-capsules"><span>COLLAPSE</span></a>
+										</li>
+									</ul>
+								</div>
+							</div><!-- end of navbar menu coffee -->
+
+							<div class="col col-lg-auto" id="navbar-beans">
+								<header>
+									<div class="container-fluid px-lg-0">
+										<button class="btn d-lg-none btn-back border-0">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0">
+											<span class="gotham-bold">BEANS</span>
+										</div>
+									</div>
+								</header>
+								<div class="container-fluid px-lg-0">
+									<ul class="navbar-nav flex-column pt-4 pt-lg-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+									</ul>
+								</div>
+							</div><!-- end of navbar menu beans -->
+
+							<div class="col col-lg-auto" id="navbar-ground">
+								<header>
+									<div class="container-fluid px-lg-0">
+										<button class="btn d-lg-none btn-back border-0">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0">
+											<span class="gotham-bold">GROUND</span>
+										</div>
+									</div>
+								</header>
+								<div class="container-fluid px-lg-0">
+									<ul class="navbar-nav flex-column pt-4 pt-lg-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+									</ul>
+								</div>
+							</div><!-- end of navbar menu ground -->
+
+							<div class="col col-lg-auto" id="navbar-drip">
+								<header>
+									<div class="container-fluid px-lg-0">
+										<button class="btn d-lg-none btn-back border-0">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0">
+											<span class="gotham-bold">DRIP</span>
+										</div>
+									</div>
+								</header>
+								<div class="container-fluid px-lg-0">
+									<ul class="navbar-nav flex-column pt-4 pt-lg-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+									</ul>
+								</div>
+							</div><!-- end of navbar menu drip -->
+
+							<div class="col col-lg-auto" id="navbar-capsules">
+								<header>
+									<div class="container-fluid px-lg-0">
+										<button class="btn d-lg-none btn-back border-0">
+											<i class="bi bi-chevron-left"></i>
+										</button>
+										<div class="px-3 px-lg-0">
+											<span class="gotham-bold">CAPSULES</span>
+										</div>
+									</div>
+								</header>
+								<div class="container-fluid px-lg-0">
+									<ul class="navbar-nav flex-column pt-4 pt-lg-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link px-0"><span>Single Origin</span></a>
+										</li>
+									</ul>
+								</div>
+							</div><!-- end of navbar menu beans -->
+
+							<div class="col col-lg-auto ms-auto d-none d-lg-block">
+								<div class="img-thumbnails" style="max-width: 180px;">
+									<img src="assets/img/navbar/box.jpg" class="img-fluid">
+								</div>
+							</div><!-- end of navbar menu img thumbnails -->
+						</div>
+					</div>
+				</div>
+			</div><!-- end of navdown -->
 		</nav><!-- end of navigation bar -->
 	</header><!-- end of main header -->
 
@@ -82,7 +285,7 @@
 						<a data-bs-toggle="collapse" href=".form-filter" class="text-dark text-decoration-none ms-auto collapsed">Filter | Sort by <i class="bi bi-chevron-up"></i><i class="bi bi-chevron-down"></i></a>
 					</header><!-- end of header title & menu filter -->
 
-					<div class="collapse show form-filter d-none">
+					<div class="collapse show form-filter">
 						<div class="d-grid gap-1 d-flex flex-wrap pt-3">
 							<button class="btn btn-sm btn-light">Collection : Single Origin <i class="bi bi-x-circle"></i></button>
 							<button class="btn btn-sm btn-light">Collection : Balicafé <i class="bi bi-x-circle"></i></button>
@@ -579,6 +782,9 @@
 	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	<!-- backrop -->
+	<div class="backdrop"></div><!-- end of backdrop -->
 
 	<!-- popup modal add to cart -->
 	<form action="">
