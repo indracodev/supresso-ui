@@ -88,14 +88,18 @@ textarea:focus,
 .btn.collapsed .bi-chevron-up,
 .btn .bi-chevron-down,
 a.collapsed .bi-chevron-up,
-a .bi-chevron-down {
+a .bi-chevron-down,
+.btn.collapsed .bi-dash,
+.btn .bi-plus {
     display: none;
 }
 
 .btn .bi-chevron-up,
 .btn.collapsed .bi-chevron-down,
 a .bi-chevron-up,
-a.collapsed .bi-chevron-down {
+a.collapsed .bi-chevron-down,
+.btn.collapsed .bi-plus,
+.btn .bi-dash {
     display: inline;
 }
 
@@ -274,7 +278,8 @@ a.collapsed .bi-chevron-down {
 }
 
 .card-produk .card-header {
-    background-color: #f1f2f2;
+    background-color: #f1f2f2!important;
+    /*background-color: transparent;*/
 }
 
 .card-produk .card-title {
@@ -775,4 +780,4 @@ a.collapsed .bi-chevron-down {
 .no-scroll .backdrop {
     opacity: 1;
     visibility: visible;
-}
+}border
