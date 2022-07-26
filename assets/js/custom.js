@@ -121,9 +121,29 @@ $(document).ready(function () {
         });
     }/*end responsive navbar desktop*/
 
-    // auto select form control
+    // ===================================== auto select form control
     $('.form-control').hover(function() {
         $(this).select();
     });
 
+    // ===================================== active first item on carousel
+    $('.carousel-inner .carousel-item:first-of-type').addClass('active');
+
+});
+
+// ===================================== fungsi slider produk
+
+let items = document.querySelectorAll('.slider-produk .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 5
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
 });
