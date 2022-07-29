@@ -25,11 +25,11 @@ $(document).ready(function () {
         $('.navbar').addClass('navbar-light');
     }
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(window).scrollTop()) {
             $('.navbar').addClass('on-scroll');
         } else {
-            $('.navbar').removeClass('on-scroll');            
+            $('.navbar').removeClass('on-scroll');
         }
     });
 
@@ -45,13 +45,13 @@ $(document).ready(function () {
     }
 
     if ($(window).width() <= 991.98) {
-        $('#navcol1').on('show.bs.collapse', function() {
+        $('#navcol1').on('show.bs.collapse', function () {
             $('.navbar').addClass('open-menu');
             $('#notifikasiNewsletter').collapse('hide');
             $('html').addClass('no-scroll');
         });
 
-        $('#navcol1').on('hide.bs.collapse', function() {
+        $('#navcol1').on('hide.bs.collapse', function () {
             $('.navbar').removeClass('open-menu');
             $('#notifikasiNewsletter').collapse('show');
             $('html').removeClass('no-scroll');
@@ -64,65 +64,65 @@ $(document).ready(function () {
         $('#navcol2').collapse('show');
 
         // klik navbar menu
-        $('#nav-coffee').click(function() {
+        $('#nav-coffee').click(function () {
             $('#navbar-coffee').addClass('active');
         });
-        $('#navbar-coffee .btn-back').click(function() {
+        $('#navbar-coffee .btn-back').click(function () {
             $('#navbar-coffee').removeClass('active');
         });
 
-        $('#nav-beans').click(function() {
+        $('#nav-beans').click(function () {
             $('#navbar-beans').addClass('active');
         });
-        $('#navbar-beans .btn-back').click(function() {
+        $('#navbar-beans .btn-back').click(function () {
             $('#navbar-beans').removeClass('active');
         });
 
-        $('#nav-ground').click(function() {
+        $('#nav-ground').click(function () {
             $('#navbar-ground').addClass('active');
         });
-        $('#navbar-ground .btn-back').click(function() {
+        $('#navbar-ground .btn-back').click(function () {
             $('#navbar-ground').removeClass('active');
         });
 
-        $('#nav-drip').click(function() {
+        $('#nav-drip').click(function () {
             $('#navbar-drip').addClass('active');
         });
-        $('#navbar-drip .btn-back').click(function() {
+        $('#navbar-drip .btn-back').click(function () {
             $('#navbar-drip').removeClass('active');
         });
 
-        $('#nav-capsules').click(function() {
+        $('#nav-capsules').click(function () {
             $('#navbar-capsules').addClass('active');
         });
-        $('#navbar-capsules .btn-back').click(function() {
+        $('#navbar-capsules .btn-back').click(function () {
             $('#navbar-capsules').removeClass('active');
         });
 
     }/*end responsive navbar mobile*/
 
     else if ($(window).width() >= 992) {
-        $('#nav-coffee').mouseenter(function() {
+        $('#nav-coffee').mouseenter(function () {
             $('#navcol2').collapse('show');
             $('html').addClass('no-scroll');
         });
 
-        $('.navbar').mouseleave(function() {
+        $('.navbar').mouseleave(function () {
             $('#navcol2').collapse('hide');
             $('html').removeClass('no-scroll');
         });
 
-        $('#navcol2').on('show.bs.collapse', function() {
-            $('.navbar').addClass('open-menu');  
+        $('#navcol2').on('show.bs.collapse', function () {
+            $('.navbar').addClass('open-menu');
         });
 
-        $('#navcol2').on('hide.bs.collapse', function() {
-            $('.navbar').removeClass('open-menu');  
+        $('#navcol2').on('hide.bs.collapse', function () {
+            $('.navbar').removeClass('open-menu');
         });
     }/*end responsive navbar desktop*/
 
     // ===================================== auto select form control
-    $('.form-control').hover(function() {
+    $('.form-control').hover(function () {
         $(this).select();
     });
 
@@ -138,7 +138,7 @@ let items = document.querySelectorAll('.slider-produk .carousel-item')
 items.forEach((el) => {
     const minPerSlide = 5
     let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
+    for (var i = 1; i < minPerSlide; i++) {
         if (!next) {
             next = items[0]
         }

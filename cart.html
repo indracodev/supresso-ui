@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SUPRESSO · Home</title>
+	<title>SUPRESSO · Shopping Cart</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/dist52/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
@@ -14,89 +14,50 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 
-	<!-- local styles -->
 	<style>
-		/*home banner*/
-
-		#home-banner .carousel-item:nth-of-type(1) {
-			background-image: url(assets/img/landingSG/m_assorted.jpg);
+		#table-cart {
+			min-width: 720px;
 		}
 
-		#home-banner .carousel-item:nth-of-type(2) {
-			background-image: url(assets/img/landingSG/m_exotic.jpg);
+		#table-cart thead tr th:first-child,
+		#table-cart tbody tr th {
+			width: 36px;
 		}
 
-		#home-banner .carousel-item:nth-of-type(3) {
-			background-image: url(assets/img/landingSG/m_lampung.jpg);
+		#table-cart tbody tr th .btn-close {
+			background-color: #f1f2f2 !important;
+			border-radius: 100%;
+			overflow: hidden;
 		}
 
-		#home-banner .carousel-caption {
-			padding: 0;
+		#table-cart thead tr th:nth-child(2),
+		#table-cart tbody tr td:first-of-type {
+			width: 125px;
 		}
 
-		@media (min-width: 992px) {
-			#home-banner .carousel-item:nth-of-type(1) {
-				background-image: url(assets/img/landingSG/d_assorted.jpg);
-			}
-
-			#home-banner .carousel-item:nth-of-type(2) {
-				background-image: url(assets/img/landingSG/d_exotic.jpg);
-			}
-
-			#home-banner .carousel-item:nth-of-type(3) {
-				background-image: url(assets/img/landingSG/d_lampung.jpg);
-			}
+		#table-cart thead tr th:nth-last-child(2),
+		#table-cart tbody tr td:nth-last-of-type(2) {
+			width: 136px;
 		}
 
-		/*tiles*/
-
-		#tiles .container-fluid {
-			padding-top: calc(var(--bs-gutter-x) * .5);
+		#table-cart thead tr th:last-child,
+		#table-cart tbody tr td:last-of-type {
+			width: 136px;
+			padding-left: 24px;
 		}
 
-		#tiles .col {
-			margin-bottom: calc(var(--bs-gutter-x) * .5);
+		#table-cart tbody tr td:nth-last-of-type(2),
+		#table-cart tbody tr td:last-of-type {
+			font-size: 1.5rem;
 		}
 
-		#tiles .card-img-overlay {
-			top: initial;
-		}
-
-		@media (max-width: 991.98px) {
-			#tiles .container-fluid {
-				padding-left: 0;
-				padding-right: 0;
-			}
-		}
-
-		@media (min-width: 992px) {
-			#tiles .card .card-img {
-				opacity: .9;
-				transition: .36s;
-			}
-
-			#tiles .card:hover .card-img {
-				opacity: 1;
-			}
-		}
-	</style><!-- end local styles -->
-
+		#table-cart tbody tr:last-child {}
+	</style>
 </head>
 
 <body>
 
 	<header id="main-header" class="fixed-top">
-
-		<!-- notifikasi bar -->
-		<div class="collapse show notifikasi" id="notifikasiNewsletter">
-			<div class="alert bg-dark text-white text-center rounded-0 m-0">
-				<a data-bs-toggle="offcanvas" href="#formNewsletter" class="text-white text-decoration-none d-inline">
-					<u>Hello. Get 10% OFF* | your first order when you subscribe to our newsletter! | Claim My 10% OFF
-						<i class="bi bi-chevron-right"></i></u>
-				</a>
-			</div>
-		</div><!-- end notifikasi bar -->
-
 		<!-- navigation bar -->
 		<nav class="navbar navbar-expand-lg d-block">
 			<div class="container-fluid container-lg">
@@ -353,189 +314,192 @@
 				</div>
 			</div><!-- end of navdown -->
 		</nav><!-- end of navigation bar -->
-
 	</header><!-- end of main header -->
 
 	<!-- main wrapper -->
-	<main class="wrapper pt-0">
-		<!-- home banner slider -->
-		<section class="mb-0">
-			<div id="home-banner" class="carousel carousel-light slide carousel-banner carousel-fade"
-				data-bs-ride="carousel">
-				<div class="carousel-control">
-					<button class="carousel-control-prev position-relative w-100" type="button"
-						data-bs-target="#home-banner" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<div class="carousel-indicators position-relative m-0">
-						<div class="position-relative">
-							<button type="button" data-bs-slide-to="0" class="active" aria-current="true"
-								aria-label="Slide 1">01</button>
-							<button type="button" data-bs-slide-to="1" aria-label="Slide 2">02</button>
-							<button type="button" data-bs-slide-to="2" aria-label="Slide 3">03</button>
-						</div>
-						<span>/</span> <small>03</small>
-					</div>
-					<button class="carousel-control-next position-relative w-100" type="button"
-						data-bs-target="#home-banner" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
+	<main class="wrapper">
 
-				<div class="carousel-inner">
-
-					<div class="carousel-item">
-						<div class="carousel-caption text-start">
-							<div class="container">
-								<div class="row justify-content-center justify-content-lg-start">
-									<div class="col-11 col-lg-7">
-										<h1 class="carousel-title display-1 gotham-bold">20% OFF</h1>
-										<h3 class="carousel-lead gotham-thin">ASSORTED CAPSULES</h3>
-										<p class="carousel-text">Single Origin Collection | Gourmet Collection</p>
-										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- end of slider -->
-
-					<div class="carousel-item">
-						<div class="carousel-caption text-start">
-							<div class="container">
-								<div class="row justify-content-center justify-content-lg-start">
-									<div class="col-11 col-lg-7">
-										<h1 class="carousel-title display-1 gotham-bold">30% OFF</h1>
-										<h3 class="carousel-lead gotham-thin">EXOTIC BAG 1KG</h3>
-										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- end of slider -->
-
-					<div class="carousel-item">
-						<div class="carousel-caption text-start">
-							<div class="container">
-								<div class="row justify-content-center justify-content-lg-start">
-									<div class="col-11 col-lg-7">
-										<h1 class="carousel-title display-1 gotham-bold">20% OFF</h1>
-										<h3 class="carousel-lead gotham-thin">ALL GROUND COFFEE</h3>
-										<p class="carousel-text">Single Origin Collection</p>
-										<a href="#" class="btn btn-orange px-4">SHOP NOW</a>
-									</div>
-								</div>
-							</div>
-						</div>
+		<!-- shopping cart -->
+		<section>
+			<form action="">
+				<div class="container">
+					<div class="mb-3 mb-lg-4">
+						<a href="product.html" class="text-dark text-decoration-none">
+							<i class="bi bi-chevron-left"></i> Continue Shopping
+						</a>
 					</div>
 
-				</div><!-- end of slider -->
-			</div>
-		</section>
-		<!-- end of home banner slider -->
+					<div class="row">
+						<div class="col-lg-8">
+							<h4 class="gotham-bold mb-3">Shopping Cart (4)</h4>
 
-		<!-- tiles -->
-		<section id="tiles">
-			<div class="container-fluid container-lg">
-				<div class="row me-0">
-					<div class="col col-12 col-md-6 pe-0">
-						<a href="#" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_balicafe.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay p-lg-5"></div>
+							<div class="table-responsive">
+								<table class="table table-hover align-middle" id="table-cart">
+									<thead class="border-secondary">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col" class="text-center">Item</th>
+											<th scope="col">Size</th>
+											<th scope="col" class="text-center">Quantity</th>
+											<th scope="col" class="text-center">Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row" class="text-center">
+												<!-- <button class="btn border-0 p-0">
+													<i class="bi bi-x-lg"></i>
+												</button> -->
+												<button class="btn-close bg-secondary"></button>
+											</th>
+											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
+											<td>
+												<p class="mb-2">
+													<strong>Sumatra Mandheling Coffee Beans</strong><br>200g
+												</p>
+												<p class="harga-produk m-0">
+													<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+												</p>
+											</td>
+											<td>
+												<div class="input-group justify-content-center">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-dash-circle"></i>
+													</button>
+													<input type="text" value="1" min="1" max="100"
+														class="form-control text-inherit text-center border-0 bg-transparent px-0">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-plus-circle"></i>
+													</button>
+												</div>
+											</td>
+											<td>
+												<div
+													class="d-flex align-items-lg-center justify-content-between text-right">
+													<span>$</span> <span>13.59</span>
+												</div>
+											</td>
+										</tr><!-- end product list -->
+
+										<tr>
+											<th scope="row" class="text-center">
+												<!-- <button class="btn border-0 p-0">
+													<i class="bi bi-x-lg"></i>
+												</button> -->
+												<button class="btn-close bg-secondary"></button>
+											</th>
+											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
+											<td>
+												<p class="mb-2">
+													<strong>Sumatra Mandheling Coffee Beans</strong><br>200g
+												</p>
+												<p class="harga-produk m-0">
+													<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+												</p>
+											</td>
+											<td>
+												<div class="input-group justify-content-center">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-dash-circle"></i>
+													</button>
+													<input type="text" value="1" min="1" max="100"
+														class="form-control text-inherit text-center border-0 bg-transparent px-0">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-plus-circle"></i>
+													</button>
+												</div>
+											</td>
+											<td>
+												<div
+													class="d-flex align-items-lg-center justify-content-between text-right">
+													<span>$</span> <span>13.59</span>
+												</div>
+											</td>
+										</tr><!-- end product list -->
+
+										<tr>
+											<th scope="row" class="text-center">
+												<!-- <button class="btn border-0 p-0">
+													<i class="bi bi-x-lg"></i>
+												</button> -->
+												<button class="btn-close bg-secondary"></button>
+											</th>
+											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
+											<td>
+												<p class="mb-2">
+													<strong>Sumatra Mandheling Coffee Beans</strong><br>200g
+												</p>
+												<p class="harga-produk m-0">
+													<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+												</p>
+											</td>
+											<td>
+												<div class="input-group justify-content-center">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-dash-circle"></i>
+													</button>
+													<input type="text" value="1" min="1" max="100"
+														class="form-control text-inherit text-center border-0 bg-transparent px-0">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-plus-circle"></i>
+													</button>
+												</div>
+											</td>
+											<td>
+												<div
+													class="d-flex align-items-lg-center justify-content-between text-right">
+													<span>$</span> <span>13.59</span>
+												</div>
+											</td>
+										</tr><!-- end product list -->
+
+										<tr>
+											<th scope="row" class="text-center">
+												<!-- <button class="btn border-0 p-0">
+													<i class="bi bi-x-lg"></i>
+												</button> -->
+												<button class="btn-close bg-secondary"></button>
+											</th>
+											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
+											<td>
+												<p class="mb-2">
+													<strong>Sumatra Mandheling Coffee Beans</strong><br>200g
+												</p>
+												<p class="harga-produk m-0">
+													<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+												</p>
+											</td>
+											<td>
+												<div class="input-group justify-content-center">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-dash-circle"></i>
+													</button>
+													<input type="text" value="1" min="1" max="100"
+														class="form-control text-inherit text-center border-0 bg-transparent px-0">
+													<button class="btn text-inherit border-0">
+														<i class="bi bi-plus-circle"></i>
+													</button>
+												</div>
+											</td>
+											<td>
+												<div
+													class="d-flex align-items-lg-center justify-content-between text-right">
+													<span>$</span> <span>13.59</span>
+												</div>
+											</td>
+										</tr><!-- end product list -->
+									</tbody>
+								</table>
 							</div>
-						</a>
-					</div><!-- end of balicafe -->
+						</div>
 
-					<div class="col col-12 col-md-6 pe-0">
-						<a href="#" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_maps.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay p-lg-5">
-									<h3 class="card-title"><small>OUR</small><br>Locations</h3>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of explore maps -->
-
-					<div class="col col-6 col-md-3 pe-0">
-						<a href="product.html" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_beans.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay">
-									<p class="card-text">Beans Collection</p>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of beans collection -->
-
-					<div class="col col-6 col-md-3 pe-0">
-						<a href="product.html" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_ground.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay">
-									<p class="card-text">Ground Collection</p>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of ground collection -->
-
-					<div class="col col-6 col-md-3 pe-0">
-						<a href="product.html" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_drip.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay">
-									<p class="card-text">Beans Drip</p>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of drip collection -->
-
-					<div class="col col-6 col-md-3 pe-0">
-						<a href="product.html" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_capsules.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay">
-									<p class="card-text">Capsules Collection</p>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of capsules collection -->
-
-					<div class="col col-12 col-md-6 pe-0">
-						<a href="#" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_fb.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay p-lg-5">
-									<h3 class="card-title"><small>Our</small><br>Facebook</h3>
-									<a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE
-											INFO</small></a>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of sosmed slider -->
-
-					<div class="col col-12 col-md-6 pe-0">
-						<a href="#" class="text-decoration-none text-white">
-							<div class="card border-0 rounded-0">
-								<img src="assets/img/home/home_gallery.jpg" class="card-img rounded-0" alt="">
-								<div class="card-img-overlay p-lg-5">
-									<h3 class="card-title"><small>Our</small><br>Gallery</h3>
-									<a href="#" class="btn btn-sm btn-outline-light rounded-0"><small>MORE
-											INFO</small></a>
-								</div>
-							</div>
-						</a>
-					</div><!-- end of gallery slider -->
-
+						<div class=" col-lg-4"></div>
+					</div>
 				</div>
-			</div>
+			</form>
 		</section>
-		<!-- end of tiles -->
 
-	</main>
-	<!-- end of main wrapper -->
+	</main><!-- end of main wrapper -->
 
 	<!-- footer copyright -->
 	<footer id="copyright" class="text-center">
@@ -590,8 +554,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
-	<!-- end footer copyright -->
+	</footer><!-- end footer copyright -->
 
 	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
@@ -600,94 +563,7 @@
 	<!-- backrop -->
 	<div class="backdrop"></div><!-- end of backdrop -->
 
-	<!-- form newsletter -->
-	<div id="formNewsletter" class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false">
-		<div class="offcanvas-header pb-0">
-			<button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
-		</div>
-		<div class="offcanvas-body pt-0">
-			<div class="container-fluid">
-				<h1 class="gotham-bold">Hello. <br>Get 10% OFF*</h1>
-				<p class="mb-4">Your first order when you subscribe to our newsletter!</p>
-				<form action="" class="mb-5">
-					<div class="form-floating border-bottom mb-3">
-						<input type="email" class="form-control rounded-0 border-0 px-0" id="formEmail1"
-							placeholder="Email Address*">
-						<label for="formEmail1" class="px-0">Email Address*</label>
-					</div>
-					<div class="form-floating border-bottom mb-3">
-						<input type="text" class="form-control rounded-0 border-0 px-0" id="formText1"
-							placeholder="First Name*">
-						<label for="formText1" class="px-0">First Name*</label>
-					</div>
-					<div class="form-floating border-bottom mb-3">
-						<input type="text" class="form-control rounded-0 border-0 px-0" id="formText2"
-							placeholder="Last Name">
-						<label for="formText2" class="px-0">First Name</label>
-					</div>
-					<div class="form-floating border-bottom mb-3">
-						<input type="password" class="form-control rounded-0 border-0 px-0" id="formPassword1"
-							placeholder="Password*">
-						<label for="formPassword1" class="px-0">Password*</label>
-					</div>
-					<div class="form-floating border-bottom mb-5">
-						<input type="password" class="form-control rounded-0 border-0 px-0" id="formCompass1"
-							placeholder="Confirmation Password*">
-						<label for="formCompass1" class="px-0">Confirmation Password*</label>
-					</div>
-					<div class="d-grid">
-						<button class="btn btn-orange">CLAIM MY 10% OFF</button>
-					</div>
-				</form>
-				<p class="small">
-					Subscribe to receive communications from Supresso about our products and services. By subscribing,
-					you agree to Supresso’s <a href="#" target="_blank" class="text-orange">Privacy Policy</a> and <a
-						href="#" target="_blank" class="text-orange">Terms & Conditions</a>.
-				</p>
-			</div>
-		</div>
-	</div><!-- end form newsletter -->
-
-	<!-- notifikasi cache -->
-	<div class="collapse show fixed-bottom" id="cookiealert" style="z-index: 2000;">
-		<div class="alert bg-orange text-white rounded-0 m-0">
-			<div class="container-fluid">
-				<div class="row justify-content-lg-between">
-					<div class="col-lg mb-3 mb-lg-0">
-						<span>
-							This website uses cookies to improve functionality and performance. Using cookies should
-							enable the user to use certain functions, share on social networks and edit messages and
-							advertisements. By clicking on the “ACCEPT” button, you agree to the use of cookies on this
-							website. For additional information, please see our <i class="bi bi-arrow-right"></i> <a
-								href="#" class="mx-4 text-white"><u>Privacy Policy</u></a>
-						</span>
-					</div>
-					<div class="col-lg-auto">
-						<button class="btn btn-light px-4" data-bs-toggle="collapse"
-							data-bs-target="#cookiealert">ACCEPT</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- end notifikasi cache -->
-
 	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$('#home-banner .carousel-caption').css({ 'padding-top': ($('#notifikasiNewsletter').height()) });
-
-			$('#notifikasiNewsletter a').click(function () {
-				$('#home-banner .carousel-caption').css('padding-top', '0');
-				$('#notifikasiNewsletter').collapse('hide');
-			});
-
-			$('#formNewsletter .btn-close').click(function () {
-				$('#home-banner .carousel-caption').css({ 'padding-top': ($('#notifikasiNewsletter').height()) });
-				$('#notifikasiNewsletter').collapse('show');
-			});
-
-		});
-
 		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
 	</script>
 

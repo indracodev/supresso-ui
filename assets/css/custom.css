@@ -283,7 +283,7 @@ a.collapsed .bi-chevron-down,
 }*/
 
 .card-produk .card-header {
-    background-color: #f1f2f2!important;
+    background-color: #f1f2f2 !important;
     /*background-color: transparent;*/
 }
 
@@ -300,12 +300,11 @@ a.collapsed .bi-chevron-down,
 .card-produk .btn-cart {
     background-color: #b4b4b4;
     color: white;
-    font-size: 1em;
+    font-size: 1.25em;
     width: 35px;
     height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
+    line-height: 35px;
 }
 
 @media (min-width: 992px) {
@@ -439,7 +438,7 @@ a.collapsed .bi-chevron-down,
     margin: 0;
 }
 
-.form-check input:checked ~ .checkmark {
+.form-check input:checked~.checkmark {
     background-color: #878787;
 }
 
@@ -462,12 +461,12 @@ a.collapsed .bi-chevron-down,
 }
 
 .navbar [type=search] {
- outline-offset: 0;
+    outline-offset: 0;
 }
 
 @media (max-width: 991.98px) {
     #navcol2 .border-top {
-        border-color: transparent!important;
+        border-color: transparent !important;
     }
 
     #navcol2 .col {
@@ -545,6 +544,7 @@ a.collapsed .bi-chevron-down,
 }
 
 @media (min-width: 1400px) {
+
     .navbar .navbar-nav .nav-link,
     .navbar .navbar-corner .navbar-nav .nav-link {
         padding-left: .75rem;
@@ -583,17 +583,19 @@ a.collapsed .bi-chevron-down,
 
 /*navbar light*/
 
-.navbar-light {
-    background-color: white;
+.navbar.navbar-light {
+    border-bottom: solid 1px transparent;
+    background-color: rgba(255, 255, 255, 1);
+    /* backdrop-filter: blur(); */
 }
 
 .navbar-light,
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, .75);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link.active {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -648,6 +650,12 @@ a.collapsed .bi-chevron-down,
     color: rgba(0, 0, 0, 1);
 }
 
+.navbar.navbar-light.on-scroll {
+    border-bottom: solid 1px #dee2e6;
+    /* background-color: rgba(255, 255, 255, .875); */
+    /* backdrop-filter: blur(2px); */
+}
+
 @media (min-width: 992px) {
     .navbar.on-scroll .navbar-brand {
         padding-top: .75rem;
@@ -677,12 +685,12 @@ a.collapsed .bi-chevron-down,
 }
 
 .navbar-dark.open-menu,
-.navbar-dark.open-menu .navbar-nav .nav-link{
+.navbar-dark.open-menu .navbar-nav .nav-link {
     color: rgba(0, 0, 0, .75);
 }
 
 .navbar-dark.open-menu .navbar-nav .nav-link:hover,
-.navbar-dark.open-menu .navbar-nav .nav-link.active{
+.navbar-dark.open-menu .navbar-nav .nav-link.active {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -812,7 +820,7 @@ a.collapsed .bi-chevron-down,
     transform: translateX(50%);
 }
 
-.slider-produk .carousel-inner .carousel-item-start.active, 
+.slider-produk .carousel-inner .carousel-item-start.active,
 .slider-produk .carousel-inner .carousel-item-prev {
     transform: translateX(-50%);
 }
@@ -824,7 +832,7 @@ a.collapsed .bi-chevron-down,
         transform: translateX(33.333333%);
     }
 
-    .slider-produk .carousel-inner .carousel-item-start.active, 
+    .slider-produk .carousel-inner .carousel-item-start.active,
     .slider-produk .carousel-inner .carousel-item-prev {
         transform: translateX(-33.333333%);
     }
@@ -837,7 +845,7 @@ a.collapsed .bi-chevron-down,
         transform: translateX(25%);
     }
 
-    .slider-produk .carousel-inner .carousel-item-start.active, 
+    .slider-produk .carousel-inner .carousel-item-start.active,
     .slider-produk .carousel-inner .carousel-item-prev {
         transform: translateX(-25%);
     }
@@ -850,14 +858,14 @@ a.collapsed .bi-chevron-down,
         transform: translateX(20%);
     }
 
-    .slider-produk .carousel-inner .carousel-item-start.active, 
+    .slider-produk .carousel-inner .carousel-item-start.active,
     .slider-produk .carousel-inner .carousel-item-prev {
         transform: translateX(-20%);
     }
 }
 
 .slider-produk .carousel-inner .carousel-item-end,
-.slider-produk .carousel-inner .carousel-item-start { 
+.slider-produk .carousel-inner .carousel-item-start {
     transform: translateX(0);
 }
 
