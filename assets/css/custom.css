@@ -63,6 +63,15 @@ form label {
 
 
 
+
+/*table*/
+
+.table-hover tr:hover td {
+    transition: .36s;
+}
+
+
+
 /*all about button*/
 
 button:focus,
@@ -93,9 +102,9 @@ textarea:focus,
 
 .btn-orange:hover,
 .btn-orange.active {
-    background-color: #fd3500;
-    border-color: #fd3500;
-    color: white;
+    background-color: #fd3500 !important;
+    border-color: #fd3500 !important;
+    color: white !important;
 }
 
 .btn-light {

@@ -147,14 +147,3 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 });
-
-// trigger taost add to cart
-// const toastTrigger = document.getElementByClassName('btn-to-cart')
-// const toastLiveExample = document.getElementById('toastAddCart')
-// if (toastTrigger) {
-//   toastTrigger.addEventListener('click', () => {
-//     const toast = new bootstrap.Toast(toastLiveExample)
-
-//     toast.show()
-//   })
-// }

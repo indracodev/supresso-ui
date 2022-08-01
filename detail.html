@@ -1060,16 +1060,46 @@
 	<div class="backdrop"></div><!-- end of backdrop -->
 
 	<!-- toast add to cart -->
-	<div class="toast-container position-fixed top-0 end-0 p-3">
+	<div class="toast-container position-fixed top-0 end-0 p-3 bg-light d-block show">
 		<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 			<div class="toast-header">
-				<img src="..." class="rounded me-2" alt="...">
-				<strong class="me-auto">Bootstrap</strong>
+				<!-- <img src="..." class="rounded me-2" alt="..."> -->
+				<strong class="me-auto">2 Item added to your Cart</strong>
 				<small>11 mins ago</small>
 				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 			</div>
 			<div class="toast-body">
-				Hello, world! This is a toast message.
+				<!-- Hello, world! This is a toast message. -->
+				<div class="container-fluid">
+					<table class="table table-sm align-middle table-borderless table-hover m-0 table-summary">
+						<tbody>
+							<tr>
+								<td class="w-40">
+									<img src="assets/img/product/produk1.png" class="img-fluid" alt="">
+								</td>
+								<td class="w-60">
+									<p class="mb-2"><strong>Sumatra Mandheling Coffee Beans</strong> 200g</p>
+									<p class="mb-0">
+										<strong class="w-40">QTY. 3</strong>
+										<br><span>$ 50.27</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="w-40">
+									<img src="assets/img/product/produk1.png" class="img-fluid" alt="">
+								</td>
+								<td class="w-60">
+									<p class="mb-2"><strong>Sumatra Mandheling Coffee Beans</strong> 200g</p>
+									<p class="mb-0">
+										<strong class="w-40">QTY. 3</strong>
+										<br><span>$ 50.27</span>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div><!-- end of toast add to cart -->
