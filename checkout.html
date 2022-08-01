@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPRESSO · Checkout</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/dist52/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gotham.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
+
+    <style>
+        @media (min-width: 576px) {
+            .kolom-panel {
+                width: 100%;
+                max-width: 360px;
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header" class="fixed-top">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg d-block">
+            <div class="container-fluid container-lg">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/img/navbar/logo.png" width="40" height="auto" class="d-lg-none">
+                    <img src="assets/img/navbar/logo.png" width="80" height="auto" class="d-none d-lg-block">
+                </a>
+
+                <div class="navbar-corner ms-auto order-lg-2 ms-lg-4">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item d-none d-lg-block">
+                            <a href="#" class="nav-link"><span>SEARCH</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><span>PROFILE</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link"><span>CART [8]</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler ms-2 border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#navcol1" style="margin-right: -.75rem;">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navcol1">
+                    <form action="" class="d-lg-none">
+                        <div class="input-group border-secondary">
+                            <button class="btn"><i class="bi bi-search"></i></button>
+                            <input type="search" placeholder="Search"
+                                class="form-control rounded-0 bg-transparent border-0">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-lg-auto py-4 py-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-coffee"><span>COFFEE</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-machines"><span>MACHINES</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-explore"><span>EXPLORE</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-partnership"><span>PARTNERSHIP</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-cafe"><span>CAFE</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-gallery"><span>GALLERY</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- end of navtop -->
+
+            <div class="collapse" id="navcol2">
+                <div class="inner-navcol2">
+                    <div class="container-fluid container-lg d-block py-lg-5">
+                        <div class="row align-items-lg-end">
+                            <!-- navbar menu -->
+                            <div class="col col-lg-auto d-lg-none" id="navbar-coffee">
+                                <header>
+                                    <div class="container-fluid px-lg-0">
+                                        <button class="btn d-lg-none btn-back border-0">
+                                            <i class="bi bi-chevron-left"></i>
+                                        </button>
+                                        <div class="px-3 px-lg-0">
+                                            <span class="gotham-bold">COFFEE</span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="container-fluid px-lg-0">
+                                    <ul class="navbar-nav flex-column pt-4 pt-lg-3">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link px-0" id="nav-beans"><span>BEANS</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link px-0" id="nav-ground"><span>GROUND</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link px-0" id="nav-drip"><span>DRIP</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link px-0"
+                                                id="nav-capsules"><span>COLLAPSE</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end of navbar menu coffee -->
+
+                            <div class="col col-lg-auto" id="navbar-beans">
+                                <header>
+                                    <div class="container-fluid px-lg-0">
+                                        <button class="btn d-lg-none btn-back border-0">
+                                            <i class="bi bi-chevron-left"></i>
+                                        </button>
+                                        <div class="px-3 px-lg-0">
+                                            <span class="gotham-bold">BEANS</span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="container-fluid px-lg-0">
+                                    <ul class="navbar-nav flex-column pt-4 pt-lg-3">
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end of navbar menu beans -->
+
+                            <div class="col col-lg-auto" id="navbar-ground">
+                                <header>
+                                    <div class="container-fluid px-lg-0">
+                                        <button class="btn d-lg-none btn-back border-0">
+                                            <i class="bi bi-chevron-left"></i>
+                                        </button>
+                                        <div class="px-3 px-lg-0">
+                                            <span class="gotham-bold">GROUND</span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="container-fluid px-lg-0">
+                                    <ul class="navbar-nav flex-column pt-4 pt-lg-3">
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end of navbar menu ground -->
+
+                            <div class="col col-lg-auto" id="navbar-drip">
+                                <header>
+                                    <div class="container-fluid px-lg-0">
+                                        <button class="btn d-lg-none btn-back border-0">
+                                            <i class="bi bi-chevron-left"></i>
+                                        </button>
+                                        <div class="px-3 px-lg-0">
+                                            <span class="gotham-bold">DRIP</span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="container-fluid px-lg-0">
+                                    <ul class="navbar-nav flex-column pt-4 pt-lg-3">
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end of navbar menu drip -->
+
+                            <div class="col col-lg-auto" id="navbar-capsules">
+                                <header>
+                                    <div class="container-fluid px-lg-0">
+                                        <button class="btn d-lg-none btn-back border-0">
+                                            <i class="bi bi-chevron-left"></i>
+                                        </button>
+                                        <div class="px-3 px-lg-0">
+                                            <span class="gotham-bold">CAPSULES</span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="container-fluid px-lg-0">
+                                    <ul class="navbar-nav flex-column pt-4 pt-lg-3">
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.html" class="nav-link px-0"><span>Single Origin</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- end of navbar menu beans -->
+
+                            <div class="col col-lg-auto ms-auto d-none d-lg-block">
+                                <div class="img-thumbnails" style="max-width: 180px;">
+                                    <img src="assets/img/navbar/box.jpg" class="img-fluid">
+                                </div>
+                            </div><!-- end of navbar menu img thumbnails -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of navdown -->
+        </nav><!-- end of navigation bar -->
+    </header><!-- end of main header -->
+
+    <!-- main wrapper -->
+    <main class="wrapper">
+
+        <!-- shopping cart -->
+        <section>
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <!-- form shipping -->
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <h4 class="gotham-bold mb-4">Checkout</h4>
+                            <h5 class="mb-5">
+                                Let us know more about you!
+                                <br>OR <a href="#" class="text-orange">Login with your account</a>
+                            </h5>
+
+                            <div class="form-floating border-bottom mb-3">
+                                <input type="text" class="form-control rounded-0 border-0 px-0" id="formName1" placeholder="First Name*">
+                                <label for="formName1" class="form-label px-0">Full Name*</label>
+                            </div>
+                            <div class="form-floating border-bottom mb-3">
+                                <input type="email" class="form-control rounded-0 border-0 px-0" id="formEmail1" placeholder="Email Address*">
+                                <label for="formEmail1" class="form-label px-0">Email Address*</label>
+                            </div>
+                            <div class="form-floating border-bottom mb-5">
+                                <input type="password" class="form-control rounded-0 border-0 px-0" id="formPhone1" placeholder="Confirmation Password*">
+                                <label for="formPhone1" class="form-label px-0">Phone Number*</label>
+                            </div>
+
+                            <h5 class="mb-5">
+                                Where would you like your item(s) to be sent?
+                            </h5>
+
+                            <div class="border-bottom mb-3">
+                                <label for="formCountry1" class="form-label px-0">Country*</label>
+                                <select class="form-select border-0 px-0" id="formCountry1" required>
+                                    <option selected disabled value="">Indonesia</option>
+                                    <option>Singapore</option>
+                                </select>
+                            </div>
+                            <div class="form-floating border-bottom mb-3">
+                                <input type="text" class="form-control rounded-0 border-0 px-0" id="formProvince1" placeholder="Province*">
+                                <label for="formProvince1" class="form-label px-0">Province*</label>
+                            </div>
+                            <div class="form-floating border-bottom mb-3">
+                                <input type="text" class="form-control rounded-0 border-0 px-0" id="formCity1" placeholder="City*">
+                                <label for="formCity1" class="form-label px-0">City*</label>
+                            </div>
+                            <div class="form-floating border-bottom mb-3">
+                                <input type="text" class="form-control rounded-0 border-0 px-0" id="formZIP1" placeholder="Post Code*">
+                                <label for="formZIP1" class="form-label px-0">Post Code*</label>
+                            </div>
+                            <div class="form-floating border-bottom mb-3">
+                                <input type="text" class="form-control rounded-0 border-0 px-0" id="formAddress1" placeholder="Address 1*">
+                                <label for="formAddress1" class="form-label px-0">Address 1*</label>
+                            </div>
+                            <div class="form-floating border-bottom">
+                                <input type="text" class="form-control rounded-0 border-0 px-0" id="formAddress2" placeholder="Address 2 (Optional)">
+                                <label for="formAddress2" class="form-label px-0">Address 2 (Optional)</label>
+                            </div>
+                            <div class="form-floating border-bottom">
+                                <textarea id="notes" rows="10" class="form-control rounded-0 border-0 px-0" placeholder="Leave a message to seller (Optional)" style="height: 203px;"></textarea>
+                                <label for="notes" class="form-label px-0">Leave a message to seller (Optional)</label>
+                            </div>
+                        </div><!-- end form shipping -->
+
+                        <!-- kolom panel -->
+                        <div class=" col-lg-6">
+                            <div class="kolom-panel">
+                                <div class="border border-secondary rounded mb-5">
+                                    <div class="container-fluid p-3 pb-0">
+                                        <h5 class="gotham-bold">Summary (2)</h5>
+                                        <!-- summary produk -->
+                                        <div class="summary-produk">
+                                            <table class="table table-sm align-middle table-borderless table-hover small m-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="w-40">
+                                                            <img src="assets/img/product/produk1.png" class="img-fluid" alt="">
+                                                        </td>
+                                                        <td class="w-60">
+                                                            <p class="mb-2"><strong>Sumatra Mandheling Coffee Beans</strong> 200g</p>
+                                                            <p class="mb-0">
+                                                                <strong class="w-40">QTY. 3</strong>
+                                                                <br><span>$ 50.27</span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-40">
+                                                            <img src="assets/img/product/produk1.png" class="img-fluid" alt="">
+                                                        </td>
+                                                        <td class="w-60">
+                                                            <p class="mb-2"><strong>Sumatra Mandheling Coffee Beans</strong> 200g</p>
+                                                            <p class="mb-0">
+                                                                <strong class="w-40">QTY. 3</strong>
+                                                                <br><span>$ 50.27</span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-40">
+                                                            <img src="assets/img/cart/freeGiftBox.png" class="img-fluid" alt="">
+                                                        </td>
+                                                        <td class="w-60">
+                                                            <p class="mb-2"><strong>Supresso Free Gift Box</strong></p>
+                                                            <p class="mb-0">
+                                                                <strong class="w-40">QTY. 1</strong>
+                                                                <br><span>$ 00.00</span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="text-end">
+                                                <a href="cart.html" class="btn border-0">[EDIT CART]</a>
+                                            </div>
+                                        </div>
+                                        <!-- end summary produk -->
+                                        <div class="border-top border-secondary my-3"></div>
+                                        <div class="row mb-4">
+                                            <div class="col"><span>Subtotal</span></div>
+                                            <div class="col-4 d-flex justify-content-between">
+                                                <span>$</span>
+                                                <span>17.60</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-4">
+                                            <input type="text" placeholder="Coupon Code"
+                                            class="form-control border-secondary">
+                                            <button class="btn btn-outline-dark">
+                                                Apply Coupon
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><span>Discount</span></div>
+                                            <div class="col-4 d-flex justify-content-between">
+                                                <span>$</span>
+                                                <span>00.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top my-3"></div>
+                                        <!-- shipping -->
+                                        <div class="container-fluid shipping my-4">
+                                            <div class="form-check position-relative mb-3">
+                                                <input class="form-check-input d-none" type="radio" name="radioShipping" id="radioShipping1" checked>
+                                                <label class="form-check-label" for="radioShipping1">
+                                                    <strong>Supresso Domestic</strong>
+                                                    <br>Estimated Shipping: 2 - 3 Working days 
+                                                    <br>Price : $ 3.50
+                                                </label>
+                                                <label class="checkmark" for="radioShipping1"></label>
+                                            </div>
+                                            <div class="form-check position-relative mb-3">
+                                                <input class="form-check-input d-none" type="radio" name="radioShipping" id="radioShipping2">
+                                                <label class="form-check-label" for="radioShipping2">
+                                                    <strong>JNE</strong>
+                                                    <br>Estimated Shipping: 2 - 3 Working days 
+                                                    <br>Price : $ 3.50
+                                                </label>
+                                                <label class="checkmark" for="radioShipping2"></label>
+                                            </div>
+                                            <div class="form-check position-relative mb-3">
+                                                <input class="form-check-input d-none" type="radio" name="radioShipping" id="radioShipping3">
+                                                <label class="form-check-label" for="radioShipping3">
+                                                    <strong>JNE</strong>
+                                                    <br>Estimated Shipping: 2 - 3 Working days 
+                                                    <br>Price : $ 3.50
+                                                </label>
+                                                <label class="checkmark" for="radioShipping3"></label>
+                                            </div>
+                                        </div>
+                                        <!-- end shipping -->
+                                        <div class="border-top my-3"></div>
+                                        <div class="row">
+                                            <div class="col"><span>Shipping</span></div>
+                                            <div class="col-4 d-flex justify-content-between">
+                                                <span>$</span>
+                                                <span>00.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top border-secondary my-3"></div>
+                                        <div class="row fs-larger my-4">
+                                            <div class="col">
+                                                <span><strong>Total</strong></span>
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-between">
+                                                <span><strong>$</strong></span>
+                                                <span><strong>17.60</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="mb-5">
+                                    <label for="formNotes1" class="form-label">Order Notes</label>
+                                    <textarea id="formNotes1" rows="5" class="form-control" placeholder="Leave a message to seller (Optional)"></textarea>
+                                </div> -->
+
+                                <h5 class="gotham-bold mb-4">Payment Method</h5>
+
+                                <div>
+                                    <div class="form-check position-relative">
+                                        <input class="form-check-input d-none" type="radio" name="radioPayment" id="radioPayment1">
+                                        <label class="form-check-label" for="radioPayment1">Paypal</label>
+                                        <label class="checkmark" for="radioPayment1"></label>
+                                    </div>
+                                    <div class="form-check position-relative">
+                                        <input class="form-check-input d-none" type="radio" name="radioPayment" id="radioPayment2" checked>
+                                        <label class="form-check-label" for="radioPayment2">Credit card/ ApplePay/ GooglePay</label>
+                                        <label class="checkmark" for="radioPayment2"></label>
+                                    </div>
+                                </div>
+
+                                <div class="border-top my-3"></div>
+
+                                <div class="mb-5">
+                                    <div class="form-check position-relative">
+                                        <input class="form-check-input d-none" type="checkbox" value="" id="checkboxpayment1" checked>
+                                        <label class="form-check-label" for="checkboxpayment1">
+                                            I want the latest news, innovations and offers from Supresso
+                                        </label>
+                                        <label class="checkmark" for="checkboxpayment1"></label>
+                                    </div>
+                                    <div class="form-check position-relative">
+                                        <input class="form-check-input d-none" type="checkbox" value="" id="checkboxpayment2">
+                                        <label class="form-check-label" for="checkboxpayment2">
+                                            I accept Supresso <a href="#" target="_blank" class="text-orange">Terms & Conditions</a>
+                                        </label>
+                                        <label class="checkmark" for="checkboxpayment2"></label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-lg btn-block btn-orange">
+                                    Proceed to Payment
+                                </button>
+                            </div>
+                        </div><!-- end kolom panel -->
+                    </div>
+                </div>
+            </form>
+        </section><!-- end of shopping cart -->
+
+    </main><!-- end of main wrapper -->
+
+    <!-- footer copyright -->
+    <footer id="copyright" class="text-center">
+        <div class="border-top border-secondary">
+            <div class="container py-5">
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-5 justify-content-center">
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="index.html" id="footer-home"
+                                class="active">HOME</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html"
+                                id="footer-beans">BEANS</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html"
+                                id="footer-ground">GROUND</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html"
+                                id="footer-drip">DRIP</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="product.html"
+                                id="footer-capsules">CAPSULES</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="membership.html"
+                                id="footer-membership">MEMBERSHIP</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="contact.html"
+                                id="footer-contact">CONTACT</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="brochure.html"
+                                id="footer-brochure">BROCHURE</a></li>
+                        <li class="breadcrumb-item my-1 my-lg-0 mx-lg-2"><a href="news.html" id="footer-news">NEWS &
+                                EVENTS</a></li>
+                    </ol>
+                </nav>
+                <div id="footer-sosmed">
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-auto">
+                        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-4 mb-lg-0 justify-content-center">
+                                <li class="breadcrumb-item my-1 my-lg-0"><a href="pp.html">Privacy Policy</a></li>
+                                <li class="breadcrumb-item my-1 my-lg-0"><a href="tnc.html">Terms & Conditions</a></li>
+                                <li class="breadcrumb-item my-1 my-lg-0"><a href="idp.html">Information on Data
+                                        Protection</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-auto ms-lg-auto"><span>Copyright &copy; 2022 Indraco. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- end footer copyright -->
+
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/dist52/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <!-- backrop -->
+    <div class="backdrop"></div><!-- end of backdrop -->
+
+    <script type="text/javascript">
+        // [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
+    </script>
+
+</body>
+
+</html>

@@ -15,8 +15,11 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
 
 	<style>
+		/* table cart */
+
 		#table-cart {
-			min-width: 720px;
+			min-width: 680px;
+			max-width: 720px;
 		}
 
 		#table-cart thead tr th:first-child,
@@ -48,10 +51,19 @@
 
 		#table-cart tbody tr td:nth-last-of-type(2),
 		#table-cart tbody tr td:last-of-type {
-			font-size: 1.5rem;
+			/* font-size: 1.25rem; */
+			font-size: larger;
 		}
 
-		#table-cart tbody tr:last-child {}
+		/* kolom panel */
+
+		@media (min-width: 576px) {
+			.kolom-panel {
+				width: 100%;
+				max-width: 360px;
+				margin-left: auto;
+			}
+		}
 	</style>
 </head>
 
@@ -330,12 +342,13 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-8">
+						<!-- cart product list -->
+						<div class="col-lg-7 col-xl-8 mb-5 mb-lg-0">
 							<h4 class="gotham-bold mb-3">Shopping Cart (4)</h4>
 
 							<div class="table-responsive">
-								<table class="table table-hover align-middle" id="table-cart">
-									<thead class="border-secondary">
+								<table class="table table-hover align-middle mb-lg-0" id="table-cart">
+									<thead class="border-bottom border-secondary">
 										<tr>
 											<th scope="col">#</th>
 											<th scope="col" class="text-center">Item</th>
@@ -347,9 +360,6 @@
 									<tbody>
 										<tr>
 											<th scope="row" class="text-center">
-												<!-- <button class="btn border-0 p-0">
-													<i class="bi bi-x-lg"></i>
-												</button> -->
 												<button class="btn-close bg-secondary"></button>
 											</th>
 											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
@@ -383,9 +393,6 @@
 
 										<tr>
 											<th scope="row" class="text-center">
-												<!-- <button class="btn border-0 p-0">
-													<i class="bi bi-x-lg"></i>
-												</button> -->
 												<button class="btn-close bg-secondary"></button>
 											</th>
 											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
@@ -419,9 +426,6 @@
 
 										<tr>
 											<th scope="row" class="text-center">
-												<!-- <button class="btn border-0 p-0">
-													<i class="bi bi-x-lg"></i>
-												</button> -->
 												<button class="btn-close bg-secondary"></button>
 											</th>
 											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
@@ -455,18 +459,15 @@
 
 										<tr>
 											<th scope="row" class="text-center">
-												<!-- <button class="btn border-0 p-0">
-													<i class="bi bi-x-lg"></i>
-												</button> -->
-												<button class="btn-close bg-secondary"></button>
+												<button class="btn-close bg-secondary d-none"></button>
 											</th>
-											<td><img src="assets/img/product/produk1.png" class="img-fluid" alt=""></td>
+											<td><img src="assets/img/cart/freeGiftBox.png" class="img-fluid" alt=""></td>
 											<td>
 												<p class="mb-2">
-													<strong>Sumatra Mandheling Coffee Beans</strong><br>200g
+													<strong>Supresso Gift Box</strong>
 												</p>
 												<p class="harga-produk m-0">
-													<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+													<del class="d-none">$ 15.10</del> <span class="text-orange">$ 00.00</span>
 												</p>
 											</td>
 											<td>
@@ -484,20 +485,143 @@
 											<td>
 												<div
 													class="d-flex align-items-lg-center justify-content-between text-right">
-													<span>$</span> <span>13.59</span>
+													<span>$</span> <span>00.00</span>
 												</div>
 											</td>
 										</tr><!-- end product list -->
 									</tbody>
 								</table>
 							</div>
-						</div>
+						</div><!-- end card product list -->
 
-						<div class=" col-lg-4"></div>
+						<!-- kolom panel -->
+						<div class=" col-lg-5 col-xl-4">
+							<div class="kolom-panel h-100">
+								<div class="border border-secondary rounded h-100">
+									<div class="container-fluid p-3 h-100 d-flex flex-column justify-content-between">
+										<div>
+											<div class="row align-items-center justify-content-center mb-4">
+												<div class="col-5">
+													<img src="assets/img/cart/freeGiftBox.png" class="img-fluid" alt="">
+												</div>
+												<div class="col-7">
+													<div class="mb-2"><span>
+														<strong>Add $16.40 more to receive a FREE gift!</strong>
+													</span></div>
+													<div>
+														<a href="product.html" class="text-dark">Continue Shopping</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="border-top border-secondary my-3"></div>
+
+											<div class="row fs-larger mb-5">
+												<div class="col">
+													<span><strong>Subtotal</strong></span>
+												</div>
+												<div class="col-4 d-flex justify-content-between">
+													<span><strong>$</strong></span>
+													<span><strong>17.60</strong></span>
+												</div>
+											</div>
+										</div>
+
+										<a href="checkout.html" class="btn btn-lg btn-orange btn-block">Checkout</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- end kolom panel -->
 					</div>
 				</div>
 			</form>
-		</section>
+		</section><!-- end of shopping cart -->
+
+		<!-- related product -->
+		<section>
+			<div class="container">
+				<h4 class="gotham-bold mb-5 text-center">Before you checkout, consider to</h4>
+
+				<!-- slider produk -->
+				<div id="slider-produk" class="carousel slide carousel-dark slider-produk w-100"
+					data-bs-ride="carousel">
+
+					<div class="carousel-control position-relative end-0 bottom-0 justify-content-end mb-4">
+						<button class="carousel-control-prev position-relative w-auto" type="button"
+							data-bs-target="#slider-produk" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+
+						<button class="carousel-control-next position-relative w-auto" type="button"
+							data-bs-target="#slider-produk" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					<div class="carousel-inner w-auto">
+
+						<!-- produk item -->
+						<div class="carousel-item gx-xl-5">
+							<div class="col-6 col-md-4 col-xl-3 col-xxl-5 kolom-produk">
+								<div class="card card-produk rounded-0 border-0 mx-auto out-stock">
+									<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+										<a href="detail.html">
+											<img src="assets/img/product/produk1.png" class="card-img rounded-0">
+										</a>
+										<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">
+											SAVE 15%
+										</div>
+										<button
+											class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
+											data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+											<i class="bi bi-cart-plus"></i>
+										</button>
+									</div>
+									<div class="card-body py-3 px-2 text-center">
+										<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+										<p class="card-text mb-2">200g</p>
+										<p class="card-text harga-produk">
+											<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- end of produk item -->
+
+						<!-- produk item -->
+						<div class="carousel-item gx-xl-5">
+							<div class="col-6 col-md-4 col-xl-3 col-xxl-5 kolom-produk">
+								<div class="card card-produk rounded-0 border-0 mx-auto">
+									<div class="card-header overflow-hidden position-relative p-0 border-0 rounded-1">
+										<a href="detail.html">
+											<img src="assets/img/product/produk1.png" class="card-img rounded-0">
+										</a>
+										<div class="promo position-absolute top-0 start-0 bg-orange text-white px-3">
+											SAVE 15%
+										</div>
+										<button
+											class="btn btn-cart border-0 position-absolute top-0 end-0 m-2 rounded-1"
+											data-bs-toggle="modal" data-bs-target="#modal-addtocart">
+											<i class="bi bi-cart-plus"></i>
+										</button>
+									</div>
+									<div class="card-body py-3 px-2 text-center">
+										<h5 class="card-title mb-2">Sumatra Mandheling Coffee Beans</h5>
+										<p class="card-text mb-2">200g</p>
+										<p class="card-text harga-produk">
+											<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- end of produk item -->
+
+					</div>
+				</div><!-- end slider produk -->
+			</div>
+		</section><!-- end related product -->
 
 	</main><!-- end of main wrapper -->
 
@@ -562,6 +686,76 @@
 
 	<!-- backrop -->
 	<div class="backdrop"></div><!-- end of backdrop -->
+
+	<!-- popup modal add to cart -->
+	<form action="">
+		<div class="modal fade modal-center" id="modal-addtocart" tabindex="-1" aria-labelledby="modal-addtocartLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row justify-content-center">
+								<div class="col-lg-4 mb-4 mb-lg-0">
+									<div class="card card-produk rounded-0 border-0">
+										<div class="card-header overflow-hidden position-relative p-0 border-0">
+											<a href="detail.html">
+												<img src="assets/img/product/produk1.png" class="card-img">
+											</a>
+											<div class="promo d-none">SAVE 15%</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<h3 class="gotham-bold">Sumatra Mandheling Coffee Beans</h3>
+									<p>200g</p>
+									<h5 class="harga-produk mb-4">
+										<del>$ 15.10</del> <span class="text-orange">$ 13.59</span>
+									</h5>
+									<p class="text-justify mb-4">
+										20% Arabica - 80% Robusta. An 20/80 blend of Arabica and Robusta roasted with
+										the
+										City+ Roast mode and consisting of only Indonesian beans. Its lowest acidity
+										amongst
+										our Gourmet Collection and high bitterness characterise this blend, with sweet
+										chocolaty aftertastes and woody, nuttiness in its undertones.
+									</p>
+									<a href="detail.html"><u>More Details<i class="bi bi-chevron-right"></i></u></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<div class="container-fluid">
+							<div class="row align-items-center gotham-bold my-2" style="font-size: 1.25em;">
+								<div class="col-auto d-flex align-items-center white-space-nowrap">
+									<div class="input-group" style="margin-left: -.75rem;">
+										<button class="btn text-inherit border-0"><i
+												class="bi bi-dash-circle"></i></button>
+										<input type="text" value="1" min="1" max="100"
+											class="form-control text-inherit text-center border-start-0 border-top-0 border-end-0 rounded-0 px-0 border-secondary"
+											style="max-width: 55px;">
+										<button class="btn text-inherit border-0"><i
+												class="bi bi-plus-circle"></i></button>
+									</div>
+									<span class="d-none d-lg-inline">item added to your Cart</span>
+								</div>
+								
+								<div class="col-auto ms-auto">
+									<span>Subtotal $ 9.90</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end of popup modal add to cart -->
+	</form><!-- end of form -->
 
 	<script type="text/javascript">
 		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });

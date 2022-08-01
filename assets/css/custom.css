@@ -17,7 +17,16 @@ html.no-scroll {
 }
 
 .text-orange {
-    color: #fd4f00;
+    color: #fd4f00!important;
+}
+
+a.text-orange {
+    color: #fd4f00!important;
+    text-decoration: none;
+}
+
+a:hover.text-orange {
+    text-decoration: underline;
 }
 
 .text-inherit {
@@ -34,6 +43,22 @@ html.no-scroll {
 
 .white-space-nowrap {
     white-space: nowrap;
+}
+
+.fs-larger {
+    font-size: larger;
+}
+
+form label {
+    color: rgba(0, 0, 0, .65);
+}
+
+.w-40 {
+    width: 40%!important;
+}
+
+.w-60 {
+    width: 60%!important;
 }
 
 
@@ -108,7 +133,7 @@ a.collapsed .bi-chevron-down,
 /*struktur*/
 
 .wrapper {
-    padding-top: 61px;
+    padding-top: 62px;
 }
 
 .wrapper section {
@@ -117,7 +142,7 @@ a.collapsed .bi-chevron-down,
 
 @media (min-width: 992px) {
     .wrapper {
-        padding-top: 164px;
+        padding-top: 165px;
     }
 
     .wrapper section {
@@ -277,10 +302,10 @@ a.collapsed .bi-chevron-down,
 
 /*produk*/
 
-/*.wrapper .card-produk {
+.wrapper .card-produk {
     max-width: 210px;
     flex-basis: 210px;
-}*/
+}
 
 .card-produk .card-header {
     background-color: #f1f2f2 !important;
@@ -428,9 +453,10 @@ a.collapsed .bi-chevron-down,
 
 .form-check .checkmark {
     position: absolute;
-    top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    top: 4px;
+    /*top: 50%;
+    transform: translateY(-50%);*/
     width: 12px;
     height: 12px;
     border-radius: 100%;
@@ -439,9 +465,8 @@ a.collapsed .bi-chevron-down,
 }
 
 .form-check input:checked~.checkmark {
-    background-color: #878787;
+    background-color: #656565;
 }
-
 
 
 /*navbar*/
