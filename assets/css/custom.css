@@ -91,7 +91,8 @@ textarea:focus,
     color: white;
 }
 
-.btn-orange:hover {
+.btn-orange:hover,
+.btn-orange.active {
     background-color: #fd3500;
     border-color: #fd3500;
     color: white;

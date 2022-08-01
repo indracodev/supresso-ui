@@ -644,7 +644,7 @@
 									</h3>
 								</div>
 
-								<button class="btn btn-lg btn-orange btn-block mb-2">Add To Cart <i
+								<button class="btn btn-lg btn-orange btn-block mb-2" id="liveToastBtn">Add To Cart <i
 										class="bi bi-cart-plus"></i></button>
 								<a href="cart.html" class="btn btn-lg btn-light btn-block mb-5 disabled" aria-disabled="true">Shopping Cart <i
 										class="bi bi-cart-check"></i></a>
@@ -1058,6 +1058,33 @@
 
 	<!-- backrop -->
 	<div class="backdrop"></div><!-- end of backdrop -->
+
+	<!-- toast add to cart -->
+	<div class="toast-container position-fixed top-0 end-0 p-3">
+		<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<img src="..." class="rounded me-2" alt="...">
+				<strong class="me-auto">Bootstrap</strong>
+				<small>11 mins ago</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				Hello, world! This is a toast message.
+			</div>
+		</div>
+	</div><!-- end of toast add to cart -->
+
+	<script>
+		const toastTrigger = document.getElementById('liveToastBtn')
+		const toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+			toastTrigger.addEventListener('click', () => {
+				const toast = new bootstrap.Toast(toastLiveExample)
+
+				toast.show()
+			})
+		}
+	</script>
 
 	<script type="text/javascript">
 		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid green"; });
